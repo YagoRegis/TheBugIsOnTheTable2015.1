@@ -8,15 +8,4 @@ sub move(int power, long angle){
 
 sub claw_control(int power){
     RotateMotor(OUT_A, power, 80);
-
 }
-
-task main()
-{
-     //RotateMotor(OUT_A, 100, 360);
-     turn();
-     //move(75, 720);
-
-
-}
-
