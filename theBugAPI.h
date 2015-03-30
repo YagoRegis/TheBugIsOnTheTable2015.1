@@ -1,14 +1,24 @@
 #define PI 3.1416
 
-#define WHEEL_DIAMETER 4.32
+float WHEEL_RADIUS = 1.75;
+float WHEEL_DIAMETER = 3.5;
+float CAR_RADIUS = 7.5;
+
+#define COMPLETE_ROTATION 360
+#define HALF_ROTATION 180
 
 
-sub turn(){
-    RotateMotorEx(OUT_BC, 75, 360, 100, true, true);
+
+sub turn(int angle, int power, int direction ){
+  int car_arc = ( angle * PI * CAR_RADIUS )/ HALF_ROTATION; // Measured in centimeter
+  int amount_turns =
+    ( angle * CAR_RADIUS)/( COMPLETE_ROTATION * WHEEL_RADIUS ) * COMPLETE_ROTATION; // Measured in centimeter
+
+  RotateMotorExPID(OUT_BC, power, amount_turns, 100 * direction,
+                    true, true, 40, 40, 90);
 }
-
 sub move(int power, int distance){
-	int angle = (distance/(PI*WHEEL_DIAMETER))*360;
+	int angle = (distance * COMPLETE_ROTATION)/(PI * WHEEL_DIAMETER);
     RotateMotor(OUT_BC, power, angle);
 }
 
