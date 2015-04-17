@@ -1,0 +1,7 @@
+#include "theBugAPI.h"
+
+task main() {
+
+  move(75, 60, FOWARD);
+  RotateMotor(OUT_A, 75, -80);
+}
