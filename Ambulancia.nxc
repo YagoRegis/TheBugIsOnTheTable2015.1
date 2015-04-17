@@ -1,13 +1,26 @@
+#include "theBugAPI.h"
+
 task main() {
-	
-	OnFwd(OUT_BC, 75);
-	Wait(800);
-	OnFwd(OUT_C, 75);
-	OnRev(OUT_B, 75);
-	Wait(850);
-	OnFwd(OUT_BC, 75);
-	Wait(11600);
-	
-	Off(OUT_BC);
-	
+
+  //Moving to abulance and goin to yellow mark
+  move(POWER_NORMAL, 22, FOWARD);
+  turn(POWER_NORMAL, 65, RIGHT);
+  move(POWER_NORMAL, 190, FOWARD);
+
+  //Goin to evacuation signal
+  move(POWER_NORMAL, 30, BACKWARD);
+  turn(POWER_NORMAL, 110, RIGHT);
+  move(POWER_NORMAL, 24, FOWARD);
+  turn(POWER_NORMAL, 90, LEFT);
+  move(POWER_NORMAL, 10, FOWARD);
+  
+  //Back to base
+  turn(POWER_NORMAL, 180, LEFT);
+  move(POWER_NORMAL, 100, FOWARD);
+  turn(POWER_NORMAL, 90, RIGHT);
+  move(POWER_NORMAL, 25, FOWARD);
+  turn(POWER_NORMAL, 100, LEFT);
+  move(POWER_NORMAL, 60, FOWARD);
+  turn(POWER_NORMAL, 70, RIGHT);
+  move(POWER_NORMAL, 30, FOWARD);
 }

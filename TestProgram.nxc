@@ -4,9 +4,9 @@ task main()
 {
      //RotateMotorEx(OUT_BC, 75, 650, 50, true, true);
      //RotateMotorEx(OUT_BC, 75, -360, 50, true, true);
-     turn(90, 75, 1);
+     turn(90, POWER_NORMAL, RIGHT);
      //RotateMotorExPID(OUT_BC, 100, 900, 50, true, true, 40, 40, 90);
-     //turn();
-     //move(75, -5);
+     //move(75, 10, FOWARD);
+     //move(POWER_NORMAL, 15, FOWARD);
 }
 
