@@ -32,6 +32,10 @@ sub move(int distance, int power, int direction){
     RotateMotor(OUT_BC, power, angle);
 }
 
-sub claw_control(int power){
-    RotateMotor(OUT_A, power, 80);
+sub claw_control(int angle, int power, int direction){
+  int car_arc = ( angle * PI * CAR_RADIUS )/ HALF_ROTATION; // Measured in centimeter
+  int amount_turns = (HALF_ROTATION * car_arc) /(PI * WHEEL_RADIUS); // Measured in centimeter
+
+  RotateMotorExPID(OUT_B, power, amount_turns, 100 * direction,
+                    true, true, 40, 40, 90);
 }
