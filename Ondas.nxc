@@ -2,6 +2,7 @@
 
 task main() {
 
-  move(75, 60, FOWARD);
-  RotateMotor(OUT_A, 75, -80);
+  move(60, POWER_NORMAL, FORWARD);
+  claw_control(60, POWER_NORMAL, FORWARD);
+  move(60, POWER_NORMAL, BACKWARD);
 }

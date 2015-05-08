@@ -13,7 +13,6 @@
 
 #define POWER_NORMAL 75
 #define POWER_LOW 50
-#define POWER_VERY_LOW 25
 #define POWER_HIGH 100
 
 #define COMPLETE_ROTATION 360

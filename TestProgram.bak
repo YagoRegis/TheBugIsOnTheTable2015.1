@@ -1,0 +1,13 @@
+#include "theBugAPI.h"
+
+task main()
+{
+     //RotateMotorEx(OUT_BC, 75, 650, 50, true, true);
+     //RotateMotorEx(OUT_BC, 75, -360, 50, true, true);
+     //turn(90, POWER_NORMAL, RIGHT);
+     //RotateMotorExPID(OUT_BC, 100, 900, 50, true, true, 40, 40, 90);
+     move(20, POWER_NORMAL, FOWARD);
+     //move(POWER_NORMAL, 15, FOWARD);
+     claw_control(50, 25, BACKWARD);
+}
+
