@@ -1,65 +1,69 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__signed_stack_001turn	6	1	0	4	4
-1	__signed_stack_001move	6	1	4	4	8
-2	__signed_stack_003turn	6	1	8	4	4
+0	__signed_stack_003move	6	1	0	4	2
+1	__signed_stack_002move	6	1	4	4	2
+2	__signed_stack_004move	6	1	8	4	2
 3	__signed_stack_002turn	6	1	12	4	2
-4	__D0move	6	1	16	4	6
-5	__rotate_theAngle5	5	1	20	4	2
-6	__DF0turn	10	1	24	4	2
+4	__signed_stack_001turn	6	1	16	4	4
+5	__D0move	6	1	20	4	6
+6	__rotate_theAngle5	5	1	24	4	2
 7	__D0turn	6	1	28	4	6
-8	__signed_stack_004turn	6	1	32	4	2
-9	__constValf6P65	10	0	36	4	1
-10	__constValf3P1416	10	0	40	4	1
-11	__constValf13P571712	10	0	44	4	1
-12	__constValf6P785856	10	0	48	4	1
-13	__signed_stack_006turn	6	1	52	4	2
-14	__signed_stack_005turn	6	1	56	4	2
-15	__float_stack_001turn	10	1	60	4	8
-16	__signed_stack_007turn	6	1	64	4	2
-17	__rotateMutex1	9	0	68	4	4
-18	__rotateMutex2	9	0	72	4	4
-19	__rotate_angle5	6	1	76	4	5
-20	__turn_7qG2_amount_turns_7qG2_000	4	1	80	2	2
-21	__constVal180	4	0	82	2	2
-22	__turn_7qG2_power_7qG2_000	4	1	84	2	4
-23	__turn_7qG2_angle_7qG2_000	4	1	86	2	4
-24	__turn_7qG2_car_arc_7qG2_000	4	1	88	2	2
-25	__turn_7qG2_direction_7qG2_000	4	1	90	2	4
-26	__move_7qG2_distance_7qG2_000	4	1	92	2	6
-27	__move_7qG2_angle_7qG2_000	4	1	94	2	2
-28	__rotate_OldRotCount5	4	1	96	2	2
-29	__rotate_RotCount5	4	1	98	2	4
-30	__move_7qG2_power_7qG2_000	4	1	100	2	6
-31	__move_7qG2_direction_7qG2_000	4	1	102	2	6
-32	____initialize_global_data_return	1	1	104	1	3
-33	__constValNeg1	2	0	105	1	1
-34	__rotate_power5	1	1	106	1	5
-35	__move_return	1	1	107	1	7
-36	__turn_return	1	1	108	1	5
-37	__constVal96	2	0	109	1	1
-38	__constVal0	2	1	110	1	6
-39	__constVal1	2	0	111	1	3
-40	__rotate_theRVI5	1	1	112	1	3
-41	____RotateMotor5_return	1	1	113	1	4
-42	__constVal32	2	0	114	1	4
-43	__rotate_thePower5	2	1	115	1	4
-44	__rotate_rs5	1	1	116	1	2
-45	__rotate_theTurnPct5	2	1	117	1	4
-46	__rotate_theRVD5	1	1	118	1	3
-47	__rotate_theRVP5	1	1	119	1	3
-48	__rotate_stop5	1	1	120	1	3
-49	__rotate_turnpct5	2	1	121	1	4
-50	__rotate_firstPort5	1	1	122	1	5
-51	__rotate_sync5	1	1	123	1	3
-52	__rotate_theRS5	1	1	124	1	3
-53	__rotate_theRM5	1	1	125	1	4
-54	__rotate_theUF5	1	1	126	1	6
-55	__rotate_theOM5	1	1	127	1	7
-56	__rotate_ports5	7	0	128	4	7
-57	__rotate_ports5.__rotate_ports5_type	1	0	0	1	0
-58	__OUT_BC	7	0	130	4	2
-59	__OUT_BC.__OUT_BC_type	1	0	0	1	0
+8	__signed_stack_001move	6	1	32	4	8
+9	__DF0turn	10	1	36	4	2
+10	__signed_stack_003turn	6	1	40	4	4
+11	__constValf6P65	10	0	44	4	1
+12	__constValf3P1416	10	0	48	4	1
+13	__constValf6P785856	10	0	52	4	1
+14	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	56	4	14
+15	__constValf13P571712	10	0	60	4	1
+16	__signed_stack_005turn	6	1	64	4	2
+17	__signed_stack_004turn	6	1	68	4	2
+18	__signed_stack_006turn	6	1	72	4	2
+19	__float_stack_001turn	10	1	76	4	8
+20	__signed_stack_007turn	6	1	80	4	2
+21	__rotateMutex1	9	0	84	4	4
+22	__rotate_angle5	6	1	88	4	5
+23	__rotateMutex2	9	0	92	4	4
+24	__move_7qG2_power_7qG2_000	4	1	96	2	12
+25	__turn_7qG2_amount_turns_7qG2_000	4	1	98	2	2
+26	__move_7qG2_distance_7qG2_000	4	1	100	2	12
+27	__turn_7qG2_power_7qG2_000	4	1	102	2	8
+28	__turn_7qG2_angle_7qG2_000	4	1	104	2	8
+29	__turn_7qG2_car_arc_7qG2_000	4	1	106	2	2
+30	__turn_7qG2_direction_7qG2_000	4	1	108	2	8
+31	__constVal180	4	0	110	2	2
+32	__move_7qG2_angle_7qG2_000	4	1	112	2	2
+33	__rotate_RotCount5	4	1	114	2	4
+34	__move_7qG2_direction_7qG2_000	4	1	116	2	12
+35	__rotate_OldRotCount5	4	1	118	2	2
+36	__constVal96	2	0	120	1	1
+37	__constValNeg1	2	0	121	1	5
+38	____initialize_global_data_return	1	1	122	1	3
+39	__rotate_power5	1	1	123	1	5
+40	__move_return	1	1	124	1	13
+41	__turn_return	1	1	125	1	9
+42	__rotate_rs5	1	1	126	1	2
+43	____RotateMotor5_return	1	1	127	1	4
+44	__rotate_theRVI5	1	1	128	1	3
+45	__rotate_theRVD5	1	1	129	1	3
+46	__constVal0	2	1	130	1	4
+47	__rotate_theTurnPct5	2	1	131	1	4
+48	__rotate_thePower5	2	1	132	1	4
+49	__constVal1	2	0	133	1	2
+50	__constVal32	2	0	134	1	4
+51	__rotate_theRVP5	1	1	135	1	3
+52	__rotate_stop5	1	1	136	1	3
+53	__rotate_turnpct5	2	1	137	1	4
+54	__rotate_firstPort5	1	1	138	1	5
+55	__rotate_sync5	1	1	139	1	3
+56	__rotate_theRM5	1	1	140	1	4
+57	__rotate_theRS5	1	1	141	1	3
+58	__rotate_theUF5	1	1	142	1	6
+59	__rotate_theOM5	1	1	143	1	7
+60	__OUT_BC	7	0	144	4	2
+61	__OUT_BC.__OUT_BC_type	1	0	0	1	0
+62	__rotate_ports5	7	0	146	4	7
+63	__rotate_ports5.__rotate_ports5_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
 0	6	0	#line 6 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
@@ -69,7 +73,7 @@ Clump	Line	PC	Source
 0	7	2		set __move_7qG2_distance_7qG2_000, 38
 0	6	5	#line 6 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
 0	6	5	#line 6 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	7	5		set __move_7qG2_power_7qG2_000, 75
+0	7	5		set __move_7qG2_power_7qG2_000, 100
 0	6	8	#line 6 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
 0	6	8	#line 6 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
 0	7	8		set __move_7qG2_direction_7qG2_000, 1
@@ -81,7 +85,7 @@ Clump	Line	PC	Source
 0	8	13		set __turn_7qG2_angle_7qG2_000, 85
 0	7	16	#line 7 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
 0	7	16	#line 7 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	8	16		set __turn_7qG2_power_7qG2_000, 75
+0	8	16		set __turn_7qG2_power_7qG2_000, 100
 0	7	19	#line 7 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
 0	7	19	#line 7 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
 0	8	19		mov __turn_7qG2_direction_7qG2_000, __constValNeg1
@@ -90,78 +94,247 @@ Clump	Line	PC	Source
 0	9	21		subcall turn, __turn_return
 0	8	23	#line 8 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
 0	8	23	#line 8 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	9	23		set __move_7qG2_distance_7qG2_000, 50
+0	9	23		set __Wait_7qG2_ms_7qG2_000_inline_main, 50
 0	8	26	#line 8 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	8	26	#line 8 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	9	26		set __move_7qG2_power_7qG2_000, 75
-0	8	29	#line 8 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	8	29	#line 8 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	9	29		set __move_7qG2_direction_7qG2_000, 1
-0	8	32	#line 8 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	10	32	#line 10 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	11	32		subcall move, __move_return
-0	10	34	#line 10 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	10	34	#line 10 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	11	34		set __turn_7qG2_angle_7qG2_000, 10
+0	8551	26	#line 8551 "NXCDefs.h"
+0	8552	26		waitv __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	28	#line 8551 "NXCDefs.h"
+0	9	28	#line 9 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	9	28	#line 9 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	10	28		set __move_7qG2_distance_7qG2_000, 50
+0	9	31	#line 9 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	9	31	#line 9 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	10	31		set __move_7qG2_power_7qG2_000, 100
+0	9	34	#line 9 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	9	34	#line 9 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	10	34		set __move_7qG2_direction_7qG2_000, 1
+0	9	37	#line 9 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
 0	10	37	#line 10 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	10	37	#line 10 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	11	37		set __turn_7qG2_power_7qG2_000, 50
-0	10	40	#line 10 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	10	40	#line 10 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	11	40		set __turn_7qG2_direction_7qG2_000, 1
-0	10	43	#line 10 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	11	43	#line 11 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	12	43		subcall turn, __turn_return
-0	11	45	#line 11 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	11	45	#line 11 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	12	45		set __move_7qG2_distance_7qG2_000, 20
+0	11	37		subcall move, __move_return
+0	10	39	#line 10 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	10	39	#line 10 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	11	39		set __turn_7qG2_angle_7qG2_000, 9
+0	10	42	#line 10 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	10	42	#line 10 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	11	42		set __turn_7qG2_power_7qG2_000, 50
+0	10	45	#line 10 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	10	45	#line 10 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	11	45		set __turn_7qG2_direction_7qG2_000, 1
+0	10	48	#line 10 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
 0	11	48	#line 11 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	11	48	#line 11 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	12	48		set __move_7qG2_power_7qG2_000, 75
-0	11	51	#line 11 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	11	51	#line 11 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	12	51		set __move_7qG2_direction_7qG2_000, 1
-0	11	54	#line 11 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	13	54	#line 13 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	14	54		subcall move, __move_return
-0	13	56	#line 13 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	13	56	#line 13 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	14	56		set __move_7qG2_distance_7qG2_000, 100
-0	13	59	#line 13 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	13	59	#line 13 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	14	59		set __move_7qG2_power_7qG2_000, 75
-0	13	62	#line 13 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	13	62	#line 13 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	14	62		set __move_7qG2_direction_7qG2_000, 1
-0	13	65	#line 13 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	14	65	#line 14 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	15	65		subcall move, __move_return
-0	14	67	#line 14 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	14	67	#line 14 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	15	67		set __turn_7qG2_angle_7qG2_000, 55
-0	14	70	#line 14 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	14	70	#line 14 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	15	70		set __turn_7qG2_power_7qG2_000, 50
-0	14	73	#line 14 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	14	73	#line 14 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	15	73		set __turn_7qG2_direction_7qG2_000, 1
-0	14	76	#line 14 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	15	76	#line 15 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	16	76		subcall turn, __turn_return
-0	15	78	#line 15 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	15	78	#line 15 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	16	78		set __move_7qG2_distance_7qG2_000, 20
-0	15	81	#line 15 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	15	81	#line 15 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	16	81		set __move_7qG2_power_7qG2_000, 75
-0	15	84	#line 15 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	15	84	#line 15 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	16	84		set __move_7qG2_direction_7qG2_000, 1
-0	15	87	#line 15 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	43	87	#line 43 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	44	87		subcall move, __move_return
-0	43	89	#line 43 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-0	44	89		exit -1, -1
+0	12	48		subcall turn, __turn_return
+0	11	50	#line 11 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	11	50	#line 11 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	12	50		set __Wait_7qG2_ms_7qG2_000_inline_main, 50
+0	11	53	#line 11 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	8551	53	#line 8551 "NXCDefs.h"
+0	8552	53		waitv __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	55	#line 8551 "NXCDefs.h"
+0	12	55	#line 12 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	12	55	#line 12 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	13	55		set __move_7qG2_distance_7qG2_000, 20
+0	12	58	#line 12 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	12	58	#line 12 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	13	58		set __move_7qG2_power_7qG2_000, 100
+0	12	61	#line 12 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	12	61	#line 12 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	13	61		set __move_7qG2_direction_7qG2_000, 1
+0	12	64	#line 12 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	15	64	#line 15 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	16	64		subcall move, __move_return
+0	15	66	#line 15 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	15	66	#line 15 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	16	66		set __move_7qG2_distance_7qG2_000, 100
+0	15	69	#line 15 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	15	69	#line 15 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	16	69		set __move_7qG2_power_7qG2_000, 100
+0	15	72	#line 15 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	15	72	#line 15 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	16	72		set __move_7qG2_direction_7qG2_000, 1
+0	15	75	#line 15 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	16	75	#line 16 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	17	75		subcall move, __move_return
+0	16	77	#line 16 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	16	77	#line 16 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	17	77		set __turn_7qG2_angle_7qG2_000, 45
+0	16	80	#line 16 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	16	80	#line 16 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	17	80		set __turn_7qG2_power_7qG2_000, 100
+0	16	83	#line 16 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	16	83	#line 16 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	17	83		set __turn_7qG2_direction_7qG2_000, 1
+0	16	86	#line 16 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	17	86	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	18	86		subcall turn, __turn_return
+0	17	88	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	17	88	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	18	88		set __Wait_7qG2_ms_7qG2_000_inline_main, 50
+0	17	91	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	8551	91	#line 8551 "NXCDefs.h"
+0	8552	91		waitv __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	93	#line 8551 "NXCDefs.h"
+0	18	93	#line 18 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	18	93	#line 18 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	19	93		set __move_7qG2_distance_7qG2_000, 25
+0	18	96	#line 18 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	18	96	#line 18 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	19	96		set __move_7qG2_power_7qG2_000, 100
+0	18	99	#line 18 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	18	99	#line 18 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	19	99		set __move_7qG2_direction_7qG2_000, 1
+0	18	102	#line 18 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	21	102	#line 21 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	22	102		subcall move, __move_return
+0	21	104	#line 21 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	21	104	#line 21 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	22	104		set __move_7qG2_distance_7qG2_000, 20
+0	21	107	#line 21 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	21	107	#line 21 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	22	107		set __move_7qG2_power_7qG2_000, 100
+0	21	110	#line 21 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	21	110	#line 21 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	22	110		mov __move_7qG2_direction_7qG2_000, __constValNeg1
+0	21	112	#line 21 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	22	112	#line 22 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	23	112		subcall move, __move_return
+0	22	114	#line 22 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	22	114	#line 22 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	23	114		set __turn_7qG2_angle_7qG2_000, 30
+0	22	117	#line 22 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	22	117	#line 22 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	23	117		set __turn_7qG2_power_7qG2_000, 100
+0	22	120	#line 22 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	22	120	#line 22 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	23	120		set __turn_7qG2_direction_7qG2_000, 1
+0	22	123	#line 22 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	23	123	#line 23 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	24	123		subcall turn, __turn_return
+0	23	125	#line 23 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	23	125	#line 23 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	24	125		set __Wait_7qG2_ms_7qG2_000_inline_main, 50
+0	23	128	#line 23 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	8551	128	#line 8551 "NXCDefs.h"
+0	8552	128		waitv __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	130	#line 8551 "NXCDefs.h"
+0	24	130	#line 24 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	24	130	#line 24 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	25	130		set __move_7qG2_distance_7qG2_000, 45
+0	24	133	#line 24 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	24	133	#line 24 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	25	133		set __move_7qG2_power_7qG2_000, 100
+0	24	136	#line 24 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	24	136	#line 24 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	25	136		mov __move_7qG2_direction_7qG2_000, __constValNeg1
+0	24	138	#line 24 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	25	138	#line 25 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	26	138		subcall move, __move_return
+0	25	140	#line 25 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	25	140	#line 25 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	26	140		set __turn_7qG2_angle_7qG2_000, 50
+0	25	143	#line 25 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	25	143	#line 25 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	26	143		set __turn_7qG2_power_7qG2_000, 100
+0	25	146	#line 25 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	25	146	#line 25 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	26	146		mov __turn_7qG2_direction_7qG2_000, __constValNeg1
+0	25	148	#line 25 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	26	148	#line 26 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	27	148		subcall turn, __turn_return
+0	26	150	#line 26 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	26	150	#line 26 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	27	150		set __Wait_7qG2_ms_7qG2_000_inline_main, 50
+0	26	153	#line 26 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	8551	153	#line 8551 "NXCDefs.h"
+0	8552	153		waitv __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	155	#line 8551 "NXCDefs.h"
+0	27	155	#line 27 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	27	155	#line 27 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	28	155		set __move_7qG2_distance_7qG2_000, 28
+0	27	158	#line 27 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	27	158	#line 27 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	28	158		set __move_7qG2_power_7qG2_000, 100
+0	27	161	#line 27 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	27	161	#line 27 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	28	161		set __move_7qG2_direction_7qG2_000, 1
+0	27	164	#line 27 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	30	164	#line 30 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	31	164		subcall move, __move_return
+0	30	166	#line 30 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	30	166	#line 30 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	31	166		set __move_7qG2_distance_7qG2_000, 30
+0	30	169	#line 30 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	30	169	#line 30 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	31	169		set __move_7qG2_power_7qG2_000, 100
+0	30	172	#line 30 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	30	172	#line 30 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	31	172		mov __move_7qG2_direction_7qG2_000, __constValNeg1
+0	30	174	#line 30 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	31	174	#line 31 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	32	174		subcall move, __move_return
+0	31	176	#line 31 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	31	176	#line 31 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	32	176		set __turn_7qG2_angle_7qG2_000, 140
+0	31	179	#line 31 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	31	179	#line 31 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	32	179		set __turn_7qG2_power_7qG2_000, 100
+0	31	182	#line 31 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	31	182	#line 31 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	32	182		set __turn_7qG2_direction_7qG2_000, 1
+0	31	185	#line 31 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	32	185	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	33	185		subcall turn, __turn_return
+0	32	187	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	32	187	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	33	187		set __Wait_7qG2_ms_7qG2_000_inline_main, 50
+0	32	190	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	8551	190	#line 8551 "NXCDefs.h"
+0	8552	190		waitv __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	192	#line 8551 "NXCDefs.h"
+0	33	192	#line 33 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	33	192	#line 33 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	34	192		set __move_7qG2_distance_7qG2_000, 60
+0	33	195	#line 33 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	33	195	#line 33 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	34	195		set __move_7qG2_power_7qG2_000, 100
+0	33	198	#line 33 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	33	198	#line 33 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	34	198		set __move_7qG2_direction_7qG2_000, 1
+0	33	201	#line 33 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	34	201	#line 34 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	35	201		subcall move, __move_return
+0	34	203	#line 34 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	34	203	#line 34 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	35	203		set __turn_7qG2_angle_7qG2_000, 55
+0	34	206	#line 34 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	34	206	#line 34 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	35	206		set __turn_7qG2_power_7qG2_000, 100
+0	34	209	#line 34 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	34	209	#line 34 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	35	209		set __turn_7qG2_direction_7qG2_000, 1
+0	34	212	#line 34 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	35	212	#line 35 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	36	212		subcall turn, __turn_return
+0	35	214	#line 35 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	35	214	#line 35 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	36	214		set __Wait_7qG2_ms_7qG2_000_inline_main, 50
+0	35	217	#line 35 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	8551	217	#line 8551 "NXCDefs.h"
+0	8552	217		waitv __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	219	#line 8551 "NXCDefs.h"
+0	36	219	#line 36 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	36	219	#line 36 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	37	219		set __move_7qG2_distance_7qG2_000, 90
+0	36	222	#line 36 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	36	222	#line 36 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	37	222		set __move_7qG2_power_7qG2_000, 100
+0	36	225	#line 36 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	36	225	#line 36 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	37	225		set __move_7qG2_direction_7qG2_000, 1
+0	36	228	#line 36 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	39	228	#line 39 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	40	228		subcall move, __move_return
+0	39	230	#line 39 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+0	40	230		exit -1, -1
 1	5332	0		brtst 4, __rotate_Done5, __rotate_angle5
 1	5333	3		sign __rotate_thePower5, __rotate_angle5
 1	5334	6		abs __rotate_theAngle5, __rotate_angle5
@@ -270,7 +443,7 @@ Clump	Line	PC	Source
 2	30	76		subcall __RotateMotor5, ____RotateMotor5_return
 2	30	78		release __rotateMutex2
 2	30	79		release __rotateMutex1
-2	6082	80	#line 6082 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	6160	80	#line 6160 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
 2	29	80	#line 29 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
 2	30	80	#line 30 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
 2	31	80		subret __turn_return
@@ -295,33 +468,42 @@ Clump	Line	PC	Source
 3	33	19		mov __signed_stack_001move, __move_7qG2_power_7qG2_000
 3	32	21	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
 3	32	21	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
-3	33	21		mov __D0move, __move_7qG2_angle_7qG2_000
-3	33	23	#line 33 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
-3	34	23	#pragma macro 35
-3	34	23		acquire __rotateMutex1
-3	34	24		acquire __rotateMutex2
-3	34	25		mov __rotate_ports5, __OUT_BC
-3	34	27		mov __rotate_power5, __signed_stack_001move
-3	34	29		mov __rotate_angle5, __D0move
-3	34	31		mov __rotate_turnpct5, __constVal0
-3	34	33		mov __rotate_sync5, __constVal0
-3	34	35		mov __rotate_stop5, __constVal1
-3	34	37		mov __rotate_theRVP5, __constVal32
-3	34	39		mov __rotate_theRVI5, __constVal0
-3	34	41		mov __rotate_theRVD5, __constVal96
-3	34	43		subcall __RotateMotor5, ____RotateMotor5_return
-3	34	45		release __rotateMutex2
-3	34	46		release __rotateMutex1
-3	6156	47	#line 6156 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
-3	33	47	#line 33 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
-3	35	47	#line 35 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
-3	36	47		subret __move_return
-4	46	0	#line 46 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
-4	47	0		subret ____initialize_global_data_return
+3	33	21		mov __signed_stack_002move, __move_7qG2_angle_7qG2_000
+3	32	23	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+3	32	23	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+3	33	23		set __signed_stack_003move, 0
+3	32	26	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+3	32	26	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+3	33	26		set __signed_stack_004move, 1
+3	32	29	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+3	32	29	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+3	33	29		set __D0move, 1
+3	33	32	#line 33 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+3	34	32	#pragma macro 35
+3	34	32		acquire __rotateMutex1
+3	34	33		acquire __rotateMutex2
+3	34	34		mov __rotate_ports5, __OUT_BC
+3	34	36		mov __rotate_power5, __signed_stack_001move
+3	34	38		mov __rotate_angle5, __signed_stack_002move
+3	34	40		mov __rotate_turnpct5, __signed_stack_003move
+3	34	42		mov __rotate_sync5, __signed_stack_004move
+3	34	44		mov __rotate_stop5, __D0move
+3	34	46		mov __rotate_theRVP5, __constVal32
+3	34	48		mov __rotate_theRVI5, __constVal0
+3	34	50		mov __rotate_theRVD5, __constVal96
+3	34	52		subcall __RotateMotor5, ____RotateMotor5_return
+3	34	54		release __rotateMutex2
+3	34	55		release __rotateMutex1
+3	6249	56	#line 6249 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+3	33	56	#line 33 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+3	35	56	#line 35 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+3	36	56		subret __move_return
+4	42	0	#line 42 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc"
+4	43	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc
-1	__RotateMotor5	92	NXTDefs.h
-2	turn	246	C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h
-3	move	328	C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h
-4	__initialize_global_data	377	C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc
+1	__RotateMotor5	233	NXTDefs.h
+2	turn	387	C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h
+3	move	469	C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h
+4	__initialize_global_data	527	C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ambulancia.nxc

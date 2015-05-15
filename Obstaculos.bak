@@ -1,0 +1,6 @@
+#include "theBugAPI.h"
+
+task main(){
+     move(50, POWER_HIGH, FORWARD);
+
+}

@@ -1,0 +1,926 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__signed_stack_001main	6	1	0	4	4
+1	__signed_stack_002main	6	1	4	4	2
+2	__signed_stack_002claw_control	6	1	8	4	2
+3	__DU0SetSensorLowspeed_inline_SetSensorUltrasonic	5	1	12	4	5
+4	__signed_stack_001claw_control	6	1	16	4	2
+5	__signed_stack_001move	6	1	20	4	8
+6	__signed_stack_003move	6	1	24	4	2
+7	__signed_stack_004move	6	1	28	4	2
+8	__rotate_angle5	6	1	32	4	4
+9	__signed_stack_002move	6	1	36	4	2
+10	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	40	4	4
+11	__RLSBmutex1	9	0	44	4	4
+12	__rotate_theAngle5	5	1	48	4	2
+13	__CLSCSMutex1	9	0	52	4	2
+14	__CLSRMutex1	9	0	56	4	2
+15	__CLSWMutex1	9	0	60	4	2
+16	__SPTArgsMutex	9	0	64	4	14
+17	__D0PlaySound	6	1	68	4	69
+18	__D0SetSensorLowspeed_inline_SetSensorUltrasonic	6	1	72	4	2
+19	__D0move	6	1	76	4	6
+20	__D0claw_control	6	1	80	4	4
+21	__D0main	6	1	84	4	13
+22	__rotateMutex2	9	0	88	4	2
+23	__signed_stack_003PlaySound	6	1	92	4	14
+24	__constValf13P571712	10	0	96	4	1
+25	__rotate_angle0	6	1	100	4	4
+26	__signed_stack_002PlaySound	6	1	104	4	14
+27	__signed_stack_001PlaySound	6	1	108	4	44
+28	__rotate_theAngle0	5	1	112	4	2
+29	__rotateMutex1	9	0	116	4	2
+30	__rotate_RotCount5	4	1	120	2	4
+31	__rotate_OldRotCount5	4	1	122	2	2
+32	__claw_control_7qG2_angle_7qG2_000	4	1	124	2	2
+33	__claw_control_7qG2_power_7qG2_000	4	1	126	2	2
+34	__constVal200	4	0	128	2	2
+35	__claw_control_7qG2_direction_7qG2_000	4	1	130	2	2
+36	__rotate_OldRotCount0	4	1	132	2	2
+37	__move_7qG2_distance_7qG2_000	4	1	134	2	2
+38	__PlaySound_7qG2_aCode_7qG2_000	4	1	136	2	7
+39	__PlaySound_7qG2_i_7qG2_001	4	1	138	2	15
+40	__move_7qG2_power_7qG2_000	4	1	140	2	2
+41	__rotate_RotCount0	4	1	142	2	4
+42	__move_7qG2_angle_7qG2_000	4	1	144	2	2
+43	__move_7qG2_direction_7qG2_000	4	1	146	2	2
+44	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main	1	1	148	1	4
+45	____ReadLSBytes1_return	1	1	149	1	4
+46	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_main	1	1	150	1	2
+47	__LSWriteOptions1	1	1	151	1	1
+48	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	152	1	2
+49	__PlaySound_return	1	1	153	1	3
+50	__claw_control_return	1	1	154	1	3
+51	____initialize_global_data_return	1	1	155	1	3
+52	__constVal96	2	0	156	1	3
+53	__move_return	1	1	157	1	3
+54	__RLSBResult1	2	1	158	1	7
+55	__SetSensorUltrasonic_7qG2_port_7qG2_000_inline_main	1	1	159	1	2
+56	__RLSBIterations1	1	1	160	1	4
+57	__RLSBytesCount1	1	1	161	1	8
+58	__rotate_rs0	1	1	162	1	2
+59	__rotate_thePower0	2	1	163	1	4
+60	__rotate_theRVD0	1	1	164	1	2
+61	__rotate_theRVP0	1	1	165	1	2
+62	__rotate_theRVI0	1	1	166	1	2
+63	__rotate_theTurnPct0	2	1	167	1	4
+64	__rotate_stop5	1	1	168	1	2
+65	__rotate_turnpct5	2	1	169	1	3
+66	__rotate_sync5	1	1	170	1	2
+67	__rotate_power5	1	1	171	1	4
+68	__rotate_firstPort5	1	1	172	1	5
+69	__rotate_firstPort0	1	1	173	1	5
+70	__rotate_sync0	1	1	174	1	2
+71	__constVal63	2	0	175	1	1
+72	__constValNeg1	2	0	176	1	1
+73	__rotate_power0	1	1	177	1	4
+74	__rotate_stop0	1	1	178	1	2
+75	__rotate_theRM0	1	1	179	1	4
+76	__rotate_theRS0	1	1	180	1	3
+77	__rotate_theOM0	1	1	181	1	7
+78	__rotate_turnpct0	2	1	182	1	3
+79	__rotate_theUF0	1	1	183	1	6
+80	____RotateMotor5_return	1	1	184	1	3
+81	__constVal3	2	0	185	1	1
+82	__constVal0	2	1	186	1	16
+83	__constVal32	2	0	187	1	11
+84	__constVal1	2	0	188	1	13
+85	__ResetSensorPort	1	1	189	1	3
+86	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	190	1	2
+87	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	191	1	2
+88	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	192	1	2
+89	__ResetSensorTmp	1	1	193	1	2
+90	____ResetSensorSubroutine_return	1	1	194	1	3
+91	__rotate_theRS5	1	1	195	1	3
+92	__rotate_theRVP5	1	1	196	1	2
+93	__rotate_theRM5	1	1	197	1	4
+94	__rotate_theUF5	1	1	198	1	6
+95	__rotate_theOM5	1	1	199	1	7
+96	__rotate_theRVI5	1	1	200	1	2
+97	__rotate_theTurnPct5	2	1	201	1	4
+98	____RotateMotor0_return	1	1	202	1	3
+99	__rotate_thePower5	2	1	203	1	4
+100	__rotate_theRVD5	1	1	204	1	2
+101	__rotate_rs5	1	1	205	1	2
+102	__CLSRArgs1	8	0	4	12	5
+103	__CLSRArgs1.Result	2	1	208	1	5
+104	__CLSRArgs1.Port	1	1	209	1	5
+105	__CLSRArgs1.Buffer	7	0	210	4	5
+106	__CLSRArgs1.Buffer.Buffer_type	1	0	0	1	0
+107	__CLSRArgs1.BufferLen	1	1	212	1	5
+108	__TextOutArgs	8	0	4	16	6
+109	__TextOutArgs.Result	2	1	216	1	6
+110	__TextOutArgs.Location	8	0	2	4	6
+111	__TextOutArgs.Location.X	4	1	220	2	6
+112	__TextOutArgs.Location.Y	4	1	222	2	6
+113	__TextOutArgs.Text	7	0	224	4	6
+114	__TextOutArgs.Text.Text_type	1	0	0	1	0
+115	__TextOutArgs.Options	5	1	228	4	6
+116	__CLSCSArgs1	8	0	3	4	4
+117	__CLSCSArgs1.Result	2	1	232	1	4
+118	__CLSCSArgs1.Port	1	1	233	1	4
+119	__CLSCSArgs1.BytesReady	1	1	234	1	4
+120	__CLSWArgs1	8	0	4	12	5
+121	__CLSWArgs1.Result	2	1	236	1	5
+122	__CLSWArgs1.Port	1	1	237	1	5
+123	__CLSWArgs1.Buffer	7	0	238	4	5
+124	__CLSWArgs1.Buffer.Buffer_type	1	0	0	1	0
+125	__CLSWArgs1.ReturnLen	1	1	240	1	5
+126	__PointOutArgs	8	0	3	12	4
+127	__PointOutArgs.Result	2	1	244	1	4
+128	__PointOutArgs.Location	8	0	2	4	4
+129	__PointOutArgs.Location.X	4	1	248	2	4
+130	__PointOutArgs.Location.Y	4	1	250	2	4
+131	__PointOutArgs.Options	5	1	252	4	4
+132	__SPTArgs	8	0	5	8	42
+133	__SPTArgs.Result	2	1	256	1	42
+134	__SPTArgs.Frequency	3	1	258	2	42
+135	__SPTArgs.Duration	3	1	260	2	42
+136	__SPTArgs.Loop	1	1	262	1	42
+137	__SPTArgs.Volume	1	1	263	1	42
+138	__rotate_ports5	7	0	264	4	6
+139	__rotate_ports5.__rotate_ports5_type	1	0	0	1	0
+140	__rotate_ports0	7	0	266	4	6
+141	__rotate_ports0.__rotate_ports0_type	1	0	0	1	0
+142	__OUT_BC	7	0	268	4	2
+143	__OUT_BC.__OUT_BC_type	1	0	0	1	0
+144	__RLSLastGoodRead1	7	0	270	4	2
+145	__RLSLastGoodRead1.__RLSLastGoodRead1_type	1	0	0	1	0
+146	__RLSReadBuf1	7	0	272	4	10
+147	__RLSReadBuf1.__RLSReadBuf1_type	1	0	0	1	0
+148	__RLSBbufLSWrite1	7	0	274	4	2
+149	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	6	0	#line 6 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	7	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	6	2	#line 6 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	6	2	#line 6 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	7	2		set __SetSensorUltrasonic_7qG2_port_7qG2_000_inline_main, 1
+0	6	5	#line 6 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	4352	5	#line 4352 "NXCDefs.h"
+0	4353	5		mov __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main, __SetSensorUltrasonic_7qG2_port_7qG2_000_inline_main
+0	4352	7	#line 4352 "NXCDefs.h"
+0	4352	7	#line 4352 "NXCDefs.h"
+0	4353	7		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_main, __constVal1
+0	4342	9	#line 4342 "NXCDefs.h"
+0	4343	9		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main
+0	4342	11	#line 4342 "NXCDefs.h"
+0	4342	11	#line 4342 "NXCDefs.h"
+0	4343	11		mov __DU0SetSensorLowspeed_inline_SetSensorUltrasonic, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_main
+0	4342	13	#line 4342 "NXCDefs.h"
+0	4343	13		tst 5, __D0SetSensorLowspeed_inline_SetSensorUltrasonic, __DU0SetSensorLowspeed_inline_SetSensorUltrasonic
+0	4342	16	#line 4342 "NXCDefs.h"
+0	4343	16		brtst 4, __001__001__ASM_Label_36, __D0SetSensorLowspeed_inline_SetSensorUltrasonic
+0	4342	19	#line 4342 "NXCDefs.h"
+0	4343	19		set __DU0SetSensorLowspeed_inline_SetSensorUltrasonic, 11
+0	4342	22	#line 4342 "NXCDefs.h"
+0	4342	22	#line 4342 "NXCDefs.h"
+0	4343	22		jmp __001__001__ASM_Label_37
+0	4342	24	#line 4342 "NXCDefs.h"
+0	4343	24		set __DU0SetSensorLowspeed_inline_SetSensorUltrasonic, 10
+0	4342	27	#line 4342 "NXCDefs.h"
+0	4342	27	#line 4342 "NXCDefs.h"
+0	4343	27		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __DU0SetSensorLowspeed_inline_SetSensorUltrasonic
+0	4247	29	#line 4247 "NXCDefs.h"
+0	4248	29		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, 0
+0	4247	33	#line 4247 "NXCDefs.h"
+0	4343	33	#line 4343 "NXCDefs.h"
+0	4343	33	#line 4343 "NXCDefs.h"
+0	4344	33		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main
+0	4343	35	#line 4343 "NXCDefs.h"
+0	4343	35	#line 4343 "NXCDefs.h"
+0	4344	35		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, 0
+0	4343	38	#line 4343 "NXCDefs.h"
+0	4260	38	#line 4260 "NXCDefs.h"
+0	4261	38		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, 1
+0	4260	42	#line 4260 "NXCDefs.h"
+0	4344	42	#line 4344 "NXCDefs.h"
+0	4344	42	#line 4344 "NXCDefs.h"
+0	4344	42	#line 4344 "NXCDefs.h"
+0	4278	42	#line 4278 "NXCDefs.h"
+0	4279	42	#pragma macro 4
+0	4279	42		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main
+0	4279	44		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	6559	46	#line 6559 "NXCDefs.h"
+0	4278	46	#line 4278 "NXCDefs.h"
+0	4345	46	#line 4345 "NXCDefs.h"
+0	4352	46	#line 4352 "NXCDefs.h"
+0	8	46	#line 8 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	8	46	#line 8 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	9	46		set __D0main, 1
+0	11	49	#line 11 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	12	49		tst 5, __D0main, __D0main
+0	11	52	#line 11 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	12	52		brtst 4, __ASM_Label_653, __D0main
+0	11	55	#line 11 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	12	55		set __Wait_7qG2_ms_7qG2_000_inline_main, 100
+0	11	58	#line 11 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	8551	58	#line 8551 "NXCDefs.h"
+0	8552	58		waitv __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	60	#line 8551 "NXCDefs.h"
+0	14	60	#line 14 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	6678	60	#line 6678 "NXCDefs.h"
+0	6679	60	#pragma macro 6
+0	6679	60		mov __PointOutArgs.Location.X, __constVal200
+0	6679	62		mov __PointOutArgs.Location.Y, __constVal200
+0	6679	64		mov __PointOutArgs.Options, __constVal1
+0	6679	66		syscall 14, __PointOutArgs
+0	6584	69	#line 6584 "NXCDefs.h"
+0	6678	69	#line 6678 "NXCDefs.h"
+0	15	69	#line 15 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	15	69	#line 15 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	16	69		set __signed_stack_001main, 0
+0	15	72	#line 15 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	15	72	#line 15 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	16	72		set __signed_stack_002main, 0
+0	15	75	#line 15 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	15	75	#line 15 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	16	75	#pragma macro 26
+0	16	75		acquire __RLSBmutex1
+0	16	76		mov __RLSReadBuf1, __RLSBbufLSWrite1
+0	16	78		set __RLSBytesCount1, 1
+0	16	81		wait 15
+0	16	83		subcall __ReadLSBytes1, ____ReadLSBytes1_return
+0	16	85		index __D0main, __RLSReadBuf1, 65535
+0	16	89		release __RLSBmutex1
+0	6598	90	#line 6598 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	17	90	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	17	90	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	18	90		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	17	92	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	18	92		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	17	94	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	18	94		set __TextOutArgs.Options, 0
+0	17	97	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	18	97		numtostr __TextOutArgs.Text, __D0main
+0	17	100	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	18	100		syscall 13, __TextOutArgs
+0	17	103	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	18	103		mov __D0main, __TextOutArgs.Result
+0	17	105	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	17	105	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	17	105	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	17	105	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	18	105	#pragma macro 26
+0	18	105		acquire __RLSBmutex1
+0	18	106		mov __RLSReadBuf1, __RLSBbufLSWrite1
+0	18	108		set __RLSBytesCount1, 1
+0	18	111		wait 15
+0	18	113		subcall __ReadLSBytes1, ____ReadLSBytes1_return
+0	18	115		index __D0main, __RLSReadBuf1, 65535
+0	18	119		release __RLSBmutex1
+0	6622	120	#line 6622 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	17	120	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	18	120		mov __signed_stack_001main, __D0main
+0	17	122	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	18	122		set __D0main, 22
+0	17	125	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	18	125		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	18	129	#line 18 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	19	129		brtst 4, __ASM_Label_666, __D0main
+0	19	132	#line 19 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	20	132	#pragma macro 7
+0	20	132		setout __OUT_BC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	6636	155	#line 6636 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	19	155	#line 19 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	20	155	#line 20 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	21	155		jmp __ASM_Label_653
+0	20	157	#line 20 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	22	157	#line 22 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	23	157		jmp __ASM_Label_667
+0	22	159	#line 22 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	23	159		set __move_7qG2_distance_7qG2_000, 15
+0	22	162	#line 22 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	22	162	#line 22 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	23	162		set __move_7qG2_power_7qG2_000, 75
+0	22	165	#line 22 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	22	165	#line 22 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	23	165		set __move_7qG2_direction_7qG2_000, 1
+0	22	168	#line 22 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	23	168	#line 23 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	24	168		subcall move, __move_return
+0	23	170	#line 23 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	25	170	#line 25 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	25	170	#line 25 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	26	170		jmp __ASM_Label_652
+0	25	172	#line 25 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	25	172	#line 25 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	26	172		set __Wait_7qG2_ms_7qG2_000_inline_main, 500
+0	25	175	#line 25 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	8551	175	#line 8551 "NXCDefs.h"
+0	8552	175		waitv __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	177	#line 8551 "NXCDefs.h"
+0	26	177	#line 26 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	26	177	#line 26 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	27	177		set __claw_control_7qG2_angle_7qG2_000, 45
+0	26	180	#line 26 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	26	180	#line 26 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	27	180		set __claw_control_7qG2_power_7qG2_000, 75
+0	26	183	#line 26 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	26	183	#line 26 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	27	183		mov __claw_control_7qG2_direction_7qG2_000, __constValNeg1
+0	26	185	#line 26 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	27	185	#line 27 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	28	185		subcall claw_control, __claw_control_return
+0	27	187	#line 27 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	27	187	#line 27 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	28	187		set __PlaySound_7qG2_aCode_7qG2_000, 3
+0	27	190	#line 27 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	29	190	#line 29 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	30	190		subcall PlaySound, __PlaySound_return
+0	29	192	#line 29 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	30	192		exit -1, -1
+1	5067	0		brtst 4, __rotate_Done0, __rotate_angle0
+1	5068	3		sign __rotate_thePower0, __rotate_angle0
+1	5069	6		abs __rotate_theAngle0, __rotate_angle0
+1	5070	9		mul __rotate_thePower0, __rotate_thePower0, __rotate_power0
+1	5072	13		set __rotate_theUF0, 23
+1	5073	16		brtst 4, __rotate_NoSync0, __rotate_sync0
+1	5074	19		set __rotate_theOM0, 7
+1	5075	22		set __rotate_theRM0, 2
+1	5076	25		mov __rotate_theTurnPct0, __rotate_turnpct0
+1	5077	27		brtst 4, __rotate_Start0, __rotate_theTurnPct0
+1	5078	30		add __rotate_theUF0, __rotate_theUF0, __constVal32
+1	5079	34		jmp __rotate_Start0
+1	5081	36		set __rotate_theOM0, 3
+1	5082	39		set __rotate_theRM0, 0
+1	5083	42		set __rotate_theTurnPct0, 0
+1	5085	45		set __rotate_theRS0, 32
+1	5086	48		setout __rotate_ports0, 1, __rotate_theOM0, 8, __rotate_theRM0, 5, __rotate_theAngle0, 6, __rotate_theRS0, 10, __rotate_theRVP0, 11, __rotate_theRVI0, 12, __rotate_theRVD0, 2, __rotate_thePower0, 7, __rotate_turnpct0, 0, __rotate_theUF0
+1	5089	71		index __rotate_firstPort0, __rotate_ports0, 65535
+1	5091	75		getout __rotate_power0, __rotate_firstPort0, 2
+1	5092	79		brtst 4, __rotate_doneRunning0, __rotate_power0
+1	5093	82		getout __rotate_rs0, __rotate_firstPort0, 6
+1	5094	86		brcmp 4, __rotate_Running0, __rotate_rs0, __constVal32
+1	5096	90		brtst 4, __rotate_Reset0, __rotate_stop0
+1	5098	93		set __rotate_theOM0, 7
+1	5099	96		set __rotate_theUF0, 7
+1	5100	99		setout __rotate_ports0, 1, __rotate_theOM0, 8, __constVal1, 6, __rotate_theRS0, 2, __constVal0, 5, __constVal0, 0, __rotate_theUF0
+1	5102	114		getout __rotate_RotCount0, __rotate_firstPort0, 14
+1	5104	118		mov __rotate_OldRotCount0, __rotate_RotCount0
+1	5105	120		wait 50
+1	5107	122		getout __rotate_RotCount0, __rotate_firstPort0, 14
+1	5108	126		brcmp 5, __rotate_Stabilize0, __rotate_OldRotCount0, __rotate_RotCount0
+1	5109	130		set __rotate_theOM0, 4
+1	5110	133		setout __rotate_ports0, 8, __rotate_theRM0, 6, __constVal0, 1, __rotate_theOM0, 0, __constVal1
+1	5113	144		brtst 4, __rotate_Done0, __rotate_theTurnPct0
+1	5114	147		setout __rotate_ports0, 0, __constVal32
+1	5116	152		subret ____RotateMotor0_return
+2	5332	0		brtst 4, __rotate_Done5, __rotate_angle5
+2	5333	3		sign __rotate_thePower5, __rotate_angle5
+2	5334	6		abs __rotate_theAngle5, __rotate_angle5
+2	5335	9		mul __rotate_thePower5, __rotate_thePower5, __rotate_power5
+2	5337	13		set __rotate_theUF5, 23
+2	5338	16		brtst 4, __rotate_NoSync5, __rotate_sync5
+2	5339	19		set __rotate_theOM5, 7
+2	5340	22		set __rotate_theRM5, 2
+2	5341	25		mov __rotate_theTurnPct5, __rotate_turnpct5
+2	5342	27		brtst 4, __rotate_Start5, __rotate_theTurnPct5
+2	5343	30		add __rotate_theUF5, __rotate_theUF5, __constVal32
+2	5344	34		jmp __rotate_Start5
+2	5346	36		set __rotate_theOM5, 3
+2	5347	39		set __rotate_theRM5, 0
+2	5348	42		set __rotate_theTurnPct5, 0
+2	5350	45		set __rotate_theRS5, 32
+2	5351	48		setout __rotate_ports5, 1, __rotate_theOM5, 8, __rotate_theRM5, 5, __rotate_theAngle5, 6, __rotate_theRS5, 10, __rotate_theRVP5, 11, __rotate_theRVI5, 12, __rotate_theRVD5, 2, __rotate_thePower5, 7, __rotate_turnpct5, 0, __rotate_theUF5
+2	5354	71		index __rotate_firstPort5, __rotate_ports5, 65535
+2	5356	75		getout __rotate_power5, __rotate_firstPort5, 2
+2	5357	79		brtst 4, __rotate_doneRunning5, __rotate_power5
+2	5358	82		getout __rotate_rs5, __rotate_firstPort5, 6
+2	5359	86		brcmp 4, __rotate_Running5, __rotate_rs5, __constVal32
+2	5361	90		brtst 4, __rotate_Reset5, __rotate_stop5
+2	5363	93		set __rotate_theOM5, 7
+2	5364	96		set __rotate_theUF5, 7
+2	5365	99		setout __rotate_ports5, 1, __rotate_theOM5, 8, __constVal1, 6, __rotate_theRS5, 2, __constVal0, 5, __constVal0, 0, __rotate_theUF5
+2	5367	114		getout __rotate_RotCount5, __rotate_firstPort5, 14
+2	5369	118		mov __rotate_OldRotCount5, __rotate_RotCount5
+2	5370	120		wait 50
+2	5372	122		getout __rotate_RotCount5, __rotate_firstPort5, 14
+2	5373	126		brcmp 5, __rotate_Stabilize5, __rotate_OldRotCount5, __rotate_RotCount5
+2	5374	130		set __rotate_theOM5, 4
+2	5375	133		setout __rotate_ports5, 8, __rotate_theRM5, 6, __constVal0, 1, __rotate_theOM5, 0, __constVal1
+2	5378	144		brtst 4, __rotate_Done5, __rotate_theTurnPct5
+2	5379	147		setout __rotate_ports5, 0, __constVal32
+2	5381	152		subret ____RotateMotor5_return
+3	5476	0		setin __constVal1, __ResetSensorPort, 5
+3	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+3	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+3	5480	11		subret ____ResetSensorSubroutine_return
+4	6319	0	#pragma macro 25
+4	6319	0		acquire __CLSWMutex1
+4	6319	1		or __CLSWArgs1.Port, __constVal1, __LSWriteOptions1
+4	6319	5		mov __CLSWArgs1.ReturnLen, __RLSBytesCount1
+4	6319	7		mov __CLSWArgs1.Buffer, __RLSReadBuf1
+4	6319	9		syscall 21, __CLSWArgs1
+4	6319	12		mov __RLSBResult1, __CLSWArgs1.Result
+4	6319	14		release __CLSWMutex1
+4	6319	15	#line 6319 "NXTDefs.h"
+4	6320	15		brtst 5, __RLSBError1, __RLSBResult1
+4	6321	18		set __RLSBIterations1, 60
+4	6323	21	#pragma macro 23
+4	6323	21		acquire __CLSCSMutex1
+4	6323	22		set __CLSCSArgs1.Port, 1
+4	6323	25		syscall 23, __CLSCSArgs1
+4	6323	28		mov __RLSBytesCount1, __CLSCSArgs1.BytesReady
+4	6323	30		mov __RLSBResult1, __CLSCSArgs1.Result
+4	6323	32		release __CLSCSMutex1
+4	6323	33	#line 6323 "NXTDefs.h"
+4	6324	33		sub __RLSBIterations1, __RLSBIterations1, __constVal1
+4	6325	37		brtst 2, __RLSBError1, __RLSBIterations1
+4	6326	40		brtst 0, __RLSBError1, __RLSBResult1
+4	6327	43		brtst 4, __RLSBReadyToRead1, __RLSBResult1
+4	6329	46		wait 1
+4	6330	48		jmp __RLSBDoCheckStatus1
+4	6332	50		brtst 4, __RLSBReturn1, __RLSBytesCount1
+4	6333	53		arrinit __RLSReadBuf1, __constVal0, __RLSBytesCount1
+4	6335	57	#pragma macro 25
+4	6335	57		acquire __CLSRMutex1
+4	6335	58		set __CLSRArgs1.Port, 1
+4	6335	61		mov __CLSRArgs1.BufferLen, __RLSBytesCount1
+4	6335	63		syscall 22, __CLSRArgs1
+4	6335	66		mov __RLSReadBuf1, __CLSRArgs1.Buffer
+4	6335	68		mov __RLSBResult1, __CLSRArgs1.Result
+4	6335	70		release __CLSRMutex1
+4	6335	71	#line 6335 "NXTDefs.h"
+4	6336	71		brtst 5, __RLSBError1, __RLSBResult1
+4	6337	74		mov __RLSLastGoodRead1, __RLSReadBuf1
+4	6338	76		jmp __RLSBDone1
+4	6340	78		mov __RLSReadBuf1, __RLSLastGoodRead1
+4	6342	80		arrsize __RLSBytesCount1, __RLSReadBuf1
+4	6344	83		subret ____ReadLSBytes1_return
+5	7127	0	#line 7127 "NXCDefs.h"
+5	7128	0		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+5	7127	2	#line 7127 "NXCDefs.h"
+5	7128	2	#line 7128 "NXCDefs.h"
+5	7129	2		set __D0PlaySound, 0
+5	7128	5	#line 7128 "NXCDefs.h"
+5	7129	5		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+5	7128	9	#line 7128 "NXCDefs.h"
+5	7129	9		brtst 4, __ASM_Label_56, __D0PlaySound
+5	7128	12	#line 7128 "NXCDefs.h"
+5	7129	12		set __signed_stack_001PlaySound, 600
+5	7128	15	#line 7128 "NXCDefs.h"
+5	7128	15	#line 7128 "NXCDefs.h"
+5	7129	15		set __signed_stack_002PlaySound, 200
+5	7128	18	#line 7128 "NXCDefs.h"
+5	7128	18	#line 7128 "NXCDefs.h"
+5	7129	18		set __signed_stack_003PlaySound, 4
+5	7128	21	#line 7128 "NXCDefs.h"
+5	7128	21	#line 7128 "NXCDefs.h"
+5	7129	21		set __D0PlaySound, 0
+5	7129	24	#line 7129 "NXCDefs.h"
+5	7130	24		acquire __SPTArgsMutex
+5	7129	25	#line 7129 "NXCDefs.h"
+5	7130	25		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+5	7129	27	#line 7129 "NXCDefs.h"
+5	7130	27		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+5	7129	29	#line 7129 "NXCDefs.h"
+5	7130	29		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+5	7129	31	#line 7129 "NXCDefs.h"
+5	7130	31		mov __SPTArgs.Loop, __D0PlaySound
+5	7129	33	#line 7129 "NXCDefs.h"
+5	7130	33		syscall 10, __SPTArgs
+5	7129	36	#line 7129 "NXCDefs.h"
+5	7130	36		mov __D0PlaySound, __SPTArgs.Result
+5	7129	38	#line 7129 "NXCDefs.h"
+5	7130	38		release __SPTArgsMutex
+5	7129	39	#line 7129 "NXCDefs.h"
+5	7129	39	#line 7129 "NXCDefs.h"
+5	7130	39		jmp __ASM_Label_65
+5	7129	41	#line 7129 "NXCDefs.h"
+5	7130	41		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+5	7129	43	#line 7129 "NXCDefs.h"
+5	7130	43	#line 7130 "NXCDefs.h"
+5	7131	43		set __D0PlaySound, 1
+5	7130	46	#line 7130 "NXCDefs.h"
+5	7131	46		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+5	7131	50	#line 7131 "NXCDefs.h"
+5	7132	50		brtst 4, __ASM_Label_68, __D0PlaySound
+5	7131	53	#line 7131 "NXCDefs.h"
+5	7132	53		set __signed_stack_001PlaySound, 600
+5	7131	56	#line 7131 "NXCDefs.h"
+5	7131	56	#line 7131 "NXCDefs.h"
+5	7132	56		set __signed_stack_002PlaySound, 150
+5	7131	59	#line 7131 "NXCDefs.h"
+5	7131	59	#line 7131 "NXCDefs.h"
+5	7132	59		set __signed_stack_003PlaySound, 4
+5	7131	62	#line 7131 "NXCDefs.h"
+5	7131	62	#line 7131 "NXCDefs.h"
+5	7132	62		set __D0PlaySound, 0
+5	7132	65	#line 7132 "NXCDefs.h"
+5	7133	65		acquire __SPTArgsMutex
+5	7132	66	#line 7132 "NXCDefs.h"
+5	7133	66		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+5	7132	68	#line 7132 "NXCDefs.h"
+5	7133	68		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+5	7132	70	#line 7132 "NXCDefs.h"
+5	7133	70		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+5	7132	72	#line 7132 "NXCDefs.h"
+5	7133	72		mov __SPTArgs.Loop, __D0PlaySound
+5	7132	74	#line 7132 "NXCDefs.h"
+5	7133	74		syscall 10, __SPTArgs
+5	7132	77	#line 7132 "NXCDefs.h"
+5	7133	77		mov __D0PlaySound, __SPTArgs.Result
+5	7132	79	#line 7132 "NXCDefs.h"
+5	7133	79		release __SPTArgsMutex
+5	7132	80	#line 7132 "NXCDefs.h"
+5	7132	80	#line 7132 "NXCDefs.h"
+5	7133	80		wait 200
+5	7132	82	#line 7132 "NXCDefs.h"
+5	7132	82	#line 7132 "NXCDefs.h"
+5	7133	82	#line 7133 "NXCDefs.h"
+5	7134	82		set __signed_stack_001PlaySound, 600
+5	7133	85	#line 7133 "NXCDefs.h"
+5	7133	85	#line 7133 "NXCDefs.h"
+5	7134	85		set __signed_stack_002PlaySound, 150
+5	7133	88	#line 7133 "NXCDefs.h"
+5	7133	88	#line 7133 "NXCDefs.h"
+5	7134	88		set __signed_stack_003PlaySound, 4
+5	7133	91	#line 7133 "NXCDefs.h"
+5	7133	91	#line 7133 "NXCDefs.h"
+5	7134	91		set __D0PlaySound, 0
+5	7134	94	#line 7134 "NXCDefs.h"
+5	7135	94		acquire __SPTArgsMutex
+5	7134	95	#line 7134 "NXCDefs.h"
+5	7135	95		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+5	7134	97	#line 7134 "NXCDefs.h"
+5	7135	97		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+5	7134	99	#line 7134 "NXCDefs.h"
+5	7135	99		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+5	7134	101	#line 7134 "NXCDefs.h"
+5	7135	101		mov __SPTArgs.Loop, __D0PlaySound
+5	7134	103	#line 7134 "NXCDefs.h"
+5	7135	103		syscall 10, __SPTArgs
+5	7134	106	#line 7134 "NXCDefs.h"
+5	7135	106		mov __D0PlaySound, __SPTArgs.Result
+5	7134	108	#line 7134 "NXCDefs.h"
+5	7135	108		release __SPTArgsMutex
+5	7134	109	#line 7134 "NXCDefs.h"
+5	7134	109	#line 7134 "NXCDefs.h"
+5	7135	109		wait 150
+5	7134	111	#line 7134 "NXCDefs.h"
+5	7134	111	#line 7134 "NXCDefs.h"
+5	7136	111	#line 7136 "NXCDefs.h"
+5	7137	111		jmp __ASM_Label_85
+5	7136	113	#line 7136 "NXCDefs.h"
+5	7137	113		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+5	7136	115	#line 7136 "NXCDefs.h"
+5	7137	115	#line 7137 "NXCDefs.h"
+5	7138	115		set __D0PlaySound, 3
+5	7137	118	#line 7137 "NXCDefs.h"
+5	7138	118		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+5	7137	122	#line 7137 "NXCDefs.h"
+5	7138	122		brtst 4, __ASM_Label_88, __D0PlaySound
+5	7137	125	#line 7137 "NXCDefs.h"
+5	7138	125		set __PlaySound_7qG2_i_7qG2_001, 4
+5	7137	128	#line 7137 "NXCDefs.h"
+5	7137	128	#line 7137 "NXCDefs.h"
+5	7138	128		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
+5	7137	130	#line 7137 "NXCDefs.h"
+5	7137	130	#line 7137 "NXCDefs.h"
+5	7138	130		set __D0PlaySound, 8
+5	7137	133	#line 7137 "NXCDefs.h"
+5	7138	133		cmp 0, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+5	7137	137	#line 7137 "NXCDefs.h"
+5	7138	137		brtst 4, __ASM_Label_90, __D0PlaySound
+5	7137	140	#line 7137 "NXCDefs.h"
+5	7138	140		jmp __ASM_Label_91
+5	7138	142	#line 7138 "NXCDefs.h"
+5	7139	142		add __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
+5	7139	146	#line 7139 "NXCDefs.h"
+5	7140	146		jmp __ASM_Label_89
+5	7139	148	#line 7139 "NXCDefs.h"
+5	7140	148		set __signed_stack_001PlaySound, 523
+5	7139	151	#line 7139 "NXCDefs.h"
+5	7139	151	#line 7139 "NXCDefs.h"
+5	7140	151		mov __D0PlaySound, __PlaySound_7qG2_i_7qG2_001
+5	7139	153	#line 7139 "NXCDefs.h"
+5	7140	153		mul __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+5	7139	157	#line 7139 "NXCDefs.h"
+5	7139	157	#line 7139 "NXCDefs.h"
+5	7140	157		set __D0PlaySound, 4
+5	7139	160	#line 7139 "NXCDefs.h"
+5	7140	160		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+5	7139	164	#line 7139 "NXCDefs.h"
+5	7139	164	#line 7139 "NXCDefs.h"
+5	7140	164		set __signed_stack_002PlaySound, 100
+5	7139	167	#line 7139 "NXCDefs.h"
+5	7139	167	#line 7139 "NXCDefs.h"
+5	7140	167		set __signed_stack_003PlaySound, 4
+5	7139	170	#line 7139 "NXCDefs.h"
+5	7139	170	#line 7139 "NXCDefs.h"
+5	7140	170		set __D0PlaySound, 0
+5	7140	173	#line 7140 "NXCDefs.h"
+5	7141	173		acquire __SPTArgsMutex
+5	7140	174	#line 7140 "NXCDefs.h"
+5	7141	174		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+5	7140	176	#line 7140 "NXCDefs.h"
+5	7141	176		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+5	7140	178	#line 7140 "NXCDefs.h"
+5	7141	178		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+5	7140	180	#line 7140 "NXCDefs.h"
+5	7141	180		mov __SPTArgs.Loop, __D0PlaySound
+5	7140	182	#line 7140 "NXCDefs.h"
+5	7141	182		syscall 10, __SPTArgs
+5	7140	185	#line 7140 "NXCDefs.h"
+5	7141	185		mov __D0PlaySound, __SPTArgs.Result
+5	7140	187	#line 7140 "NXCDefs.h"
+5	7141	187		release __SPTArgsMutex
+5	7140	188	#line 7140 "NXCDefs.h"
+5	7140	188	#line 7140 "NXCDefs.h"
+5	7141	188		wait 100
+5	7140	190	#line 7140 "NXCDefs.h"
+5	7140	190	#line 7140 "NXCDefs.h"
+5	7142	190	#line 7142 "NXCDefs.h"
+5	7143	190		jmp __ASM_Label_92
+5	7142	192	#line 7142 "NXCDefs.h"
+5	7142	192	#line 7142 "NXCDefs.h"
+5	7143	192		jmp __ASM_Label_105
+5	7142	194	#line 7142 "NXCDefs.h"
+5	7143	194		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+5	7142	196	#line 7142 "NXCDefs.h"
+5	7143	196	#line 7143 "NXCDefs.h"
+5	7144	196		set __D0PlaySound, 2
+5	7143	199	#line 7143 "NXCDefs.h"
+5	7144	199		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+5	7143	203	#line 7143 "NXCDefs.h"
+5	7144	203		brtst 4, __ASM_Label_108, __D0PlaySound
+5	7143	206	#line 7143 "NXCDefs.h"
+5	7144	206		set __PlaySound_7qG2_i_7qG2_001, 7
+5	7143	209	#line 7143 "NXCDefs.h"
+5	7143	209	#line 7143 "NXCDefs.h"
+5	7144	209		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
+5	7143	211	#line 7143 "NXCDefs.h"
+5	7143	211	#line 7143 "NXCDefs.h"
+5	7144	211		set __D0PlaySound, 3
+5	7143	214	#line 7143 "NXCDefs.h"
+5	7144	214		cmp 1, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+5	7143	218	#line 7143 "NXCDefs.h"
+5	7144	218		brtst 4, __ASM_Label_110, __D0PlaySound
+5	7143	221	#line 7143 "NXCDefs.h"
+5	7144	221		jmp __ASM_Label_111
+5	7144	223	#line 7144 "NXCDefs.h"
+5	7145	223		sub __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
+5	7145	227	#line 7145 "NXCDefs.h"
+5	7146	227		jmp __ASM_Label_109
+5	7145	229	#line 7145 "NXCDefs.h"
+5	7146	229		set __signed_stack_001PlaySound, 523
+5	7145	232	#line 7145 "NXCDefs.h"
+5	7145	232	#line 7145 "NXCDefs.h"
+5	7146	232		mov __D0PlaySound, __PlaySound_7qG2_i_7qG2_001
+5	7145	234	#line 7145 "NXCDefs.h"
+5	7146	234		mul __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+5	7145	238	#line 7145 "NXCDefs.h"
+5	7145	238	#line 7145 "NXCDefs.h"
+5	7146	238		set __D0PlaySound, 4
+5	7145	241	#line 7145 "NXCDefs.h"
+5	7146	241		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+5	7145	245	#line 7145 "NXCDefs.h"
+5	7145	245	#line 7145 "NXCDefs.h"
+5	7146	245		set __signed_stack_002PlaySound, 100
+5	7145	248	#line 7145 "NXCDefs.h"
+5	7145	248	#line 7145 "NXCDefs.h"
+5	7146	248		set __signed_stack_003PlaySound, 4
+5	7145	251	#line 7145 "NXCDefs.h"
+5	7145	251	#line 7145 "NXCDefs.h"
+5	7146	251		set __D0PlaySound, 0
+5	7146	254	#line 7146 "NXCDefs.h"
+5	7147	254		acquire __SPTArgsMutex
+5	7146	255	#line 7146 "NXCDefs.h"
+5	7147	255		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+5	7146	257	#line 7146 "NXCDefs.h"
+5	7147	257		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+5	7146	259	#line 7146 "NXCDefs.h"
+5	7147	259		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+5	7146	261	#line 7146 "NXCDefs.h"
+5	7147	261		mov __SPTArgs.Loop, __D0PlaySound
+5	7146	263	#line 7146 "NXCDefs.h"
+5	7147	263		syscall 10, __SPTArgs
+5	7146	266	#line 7146 "NXCDefs.h"
+5	7147	266		mov __D0PlaySound, __SPTArgs.Result
+5	7146	268	#line 7146 "NXCDefs.h"
+5	7147	268		release __SPTArgsMutex
+5	7146	269	#line 7146 "NXCDefs.h"
+5	7146	269	#line 7146 "NXCDefs.h"
+5	7147	269		wait 100
+5	7146	271	#line 7146 "NXCDefs.h"
+5	7146	271	#line 7146 "NXCDefs.h"
+5	7148	271	#line 7148 "NXCDefs.h"
+5	7149	271		jmp __ASM_Label_112
+5	7148	273	#line 7148 "NXCDefs.h"
+5	7148	273	#line 7148 "NXCDefs.h"
+5	7149	273		jmp __ASM_Label_125
+5	7148	275	#line 7148 "NXCDefs.h"
+5	7149	275		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+5	7148	277	#line 7148 "NXCDefs.h"
+5	7149	277	#line 7149 "NXCDefs.h"
+5	7150	277		set __D0PlaySound, 4
+5	7149	280	#line 7149 "NXCDefs.h"
+5	7150	280		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+5	7150	284	#line 7150 "NXCDefs.h"
+5	7151	284		brtst 4, __ASM_Label_128, __D0PlaySound
+5	7150	287	#line 7150 "NXCDefs.h"
+5	7151	287		set __signed_stack_001PlaySound, 100
+5	7150	290	#line 7150 "NXCDefs.h"
+5	7150	290	#line 7150 "NXCDefs.h"
+5	7151	290		set __signed_stack_002PlaySound, 500
+5	7150	293	#line 7150 "NXCDefs.h"
+5	7150	293	#line 7150 "NXCDefs.h"
+5	7151	293		set __signed_stack_003PlaySound, 4
+5	7150	296	#line 7150 "NXCDefs.h"
+5	7150	296	#line 7150 "NXCDefs.h"
+5	7151	296		set __D0PlaySound, 0
+5	7151	299	#line 7151 "NXCDefs.h"
+5	7152	299		acquire __SPTArgsMutex
+5	7151	300	#line 7151 "NXCDefs.h"
+5	7152	300		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+5	7151	302	#line 7151 "NXCDefs.h"
+5	7152	302		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+5	7151	304	#line 7151 "NXCDefs.h"
+5	7152	304		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+5	7151	306	#line 7151 "NXCDefs.h"
+5	7152	306		mov __SPTArgs.Loop, __D0PlaySound
+5	7151	308	#line 7151 "NXCDefs.h"
+5	7152	308		syscall 10, __SPTArgs
+5	7151	311	#line 7151 "NXCDefs.h"
+5	7152	311		mov __D0PlaySound, __SPTArgs.Result
+5	7151	313	#line 7151 "NXCDefs.h"
+5	7152	313		release __SPTArgsMutex
+5	7151	314	#line 7151 "NXCDefs.h"
+5	7151	314	#line 7151 "NXCDefs.h"
+5	7152	314		wait 500
+5	7151	316	#line 7151 "NXCDefs.h"
+5	7151	316	#line 7151 "NXCDefs.h"
+5	7153	316	#line 7153 "NXCDefs.h"
+5	7154	316		jmp __ASM_Label_137
+5	7153	318	#line 7153 "NXCDefs.h"
+5	7154	318		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+5	7153	320	#line 7153 "NXCDefs.h"
+5	7154	320	#line 7154 "NXCDefs.h"
+5	7155	320		set __D0PlaySound, 5
+5	7154	323	#line 7154 "NXCDefs.h"
+5	7155	323		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+5	7154	327	#line 7154 "NXCDefs.h"
+5	7155	327		brtst 4, __ASM_Label_140, __D0PlaySound
+5	7154	330	#line 7154 "NXCDefs.h"
+5	7155	330		set __PlaySound_7qG2_i_7qG2_001, 4
+5	7154	333	#line 7154 "NXCDefs.h"
+5	7154	333	#line 7154 "NXCDefs.h"
+5	7155	333		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
+5	7154	335	#line 7154 "NXCDefs.h"
+5	7154	335	#line 7154 "NXCDefs.h"
+5	7155	335		set __D0PlaySound, 8
+5	7154	338	#line 7154 "NXCDefs.h"
+5	7155	338		cmp 0, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+5	7154	342	#line 7154 "NXCDefs.h"
+5	7155	342		brtst 4, __ASM_Label_142, __D0PlaySound
+5	7154	345	#line 7154 "NXCDefs.h"
+5	7155	345		jmp __ASM_Label_143
+5	7155	347	#line 7155 "NXCDefs.h"
+5	7156	347		add __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
+5	7156	351	#line 7156 "NXCDefs.h"
+5	7157	351		jmp __ASM_Label_141
+5	7156	353	#line 7156 "NXCDefs.h"
+5	7157	353		set __signed_stack_001PlaySound, 523
+5	7156	356	#line 7156 "NXCDefs.h"
+5	7156	356	#line 7156 "NXCDefs.h"
+5	7157	356		mov __D0PlaySound, __PlaySound_7qG2_i_7qG2_001
+5	7156	358	#line 7156 "NXCDefs.h"
+5	7157	358		mul __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+5	7156	362	#line 7156 "NXCDefs.h"
+5	7156	362	#line 7156 "NXCDefs.h"
+5	7157	362		set __D0PlaySound, 4
+5	7156	365	#line 7156 "NXCDefs.h"
+5	7157	365		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+5	7156	369	#line 7156 "NXCDefs.h"
+5	7156	369	#line 7156 "NXCDefs.h"
+5	7157	369		set __signed_stack_002PlaySound, 50
+5	7156	372	#line 7156 "NXCDefs.h"
+5	7156	372	#line 7156 "NXCDefs.h"
+5	7157	372		set __signed_stack_003PlaySound, 4
+5	7156	375	#line 7156 "NXCDefs.h"
+5	7156	375	#line 7156 "NXCDefs.h"
+5	7157	375		set __D0PlaySound, 0
+5	7157	378	#line 7157 "NXCDefs.h"
+5	7158	378		acquire __SPTArgsMutex
+5	7157	379	#line 7157 "NXCDefs.h"
+5	7158	379		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+5	7157	381	#line 7157 "NXCDefs.h"
+5	7158	381		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+5	7157	383	#line 7157 "NXCDefs.h"
+5	7158	383		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+5	7157	385	#line 7157 "NXCDefs.h"
+5	7158	385		mov __SPTArgs.Loop, __D0PlaySound
+5	7157	387	#line 7157 "NXCDefs.h"
+5	7158	387		syscall 10, __SPTArgs
+5	7157	390	#line 7157 "NXCDefs.h"
+5	7158	390		mov __D0PlaySound, __SPTArgs.Result
+5	7157	392	#line 7157 "NXCDefs.h"
+5	7158	392		release __SPTArgsMutex
+5	7157	393	#line 7157 "NXCDefs.h"
+5	7157	393	#line 7157 "NXCDefs.h"
+5	7158	393		wait 50
+5	7157	395	#line 7157 "NXCDefs.h"
+5	7157	395	#line 7157 "NXCDefs.h"
+5	7169	395	#line 7169 "NXCDefs.h"
+5	7170	395		jmp __ASM_Label_144
+5	7169	397	#line 7169 "NXCDefs.h"
+5	7169	397	#line 7169 "NXCDefs.h"
+5	7169	397	#line 7169 "NXCDefs.h"
+5	7169	397	#line 7169 "NXCDefs.h"
+5	7169	397	#line 7169 "NXCDefs.h"
+5	7169	397	#line 7169 "NXCDefs.h"
+5	7169	397	#line 7169 "NXCDefs.h"
+5	7169	397	#line 7169 "NXCDefs.h"
+5	7170	397		subret __PlaySound_return
+6	31	0	#line 31 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+6	32	0		mov __signed_stack_001move, __move_7qG2_distance_7qG2_000
+6	31	2	#line 31 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+6	31	2	#line 31 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+6	32	2		set __D0move, 360
+6	31	5	#line 31 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+6	32	5		mul __signed_stack_001move, __signed_stack_001move, __D0move
+6	31	9	#line 31 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+6	31	9	#line 31 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+6	32	9		mov __D0move, __move_7qG2_direction_7qG2_000
+6	31	11	#line 31 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+6	32	11		mul __signed_stack_001move, __signed_stack_001move, __D0move
+6	31	15	#line 31 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+6	31	15	#line 31 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+6	32	15	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+6	33	15		div __move_7qG2_angle_7qG2_000, __signed_stack_001move, __constValf13P571712
+6	32	19	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+6	32	19	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+6	33	19		mov __signed_stack_001move, __move_7qG2_power_7qG2_000
+6	32	21	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+6	32	21	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+6	33	21		mov __signed_stack_002move, __move_7qG2_angle_7qG2_000
+6	32	23	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+6	32	23	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+6	33	23		set __signed_stack_003move, 0
+6	32	26	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+6	32	26	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+6	33	26		set __signed_stack_004move, 1
+6	32	29	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+6	32	29	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+6	33	29		set __D0move, 1
+6	33	32	#line 33 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+6	34	32	#pragma macro 35
+6	34	32		acquire __rotateMutex1
+6	34	33		acquire __rotateMutex2
+6	34	34		mov __rotate_ports5, __OUT_BC
+6	34	36		mov __rotate_power5, __signed_stack_001move
+6	34	38		mov __rotate_angle5, __signed_stack_002move
+6	34	40		mov __rotate_turnpct5, __signed_stack_003move
+6	34	42		mov __rotate_sync5, __signed_stack_004move
+6	34	44		mov __rotate_stop5, __D0move
+6	34	46		mov __rotate_theRVP5, __constVal32
+6	34	48		mov __rotate_theRVI5, __constVal0
+6	34	50		mov __rotate_theRVD5, __constVal96
+6	34	52		subcall __RotateMotor5, ____RotateMotor5_return
+6	34	54		release __rotateMutex2
+6	34	55		release __rotateMutex1
+6	6405	56	#line 6405 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+6	33	56	#line 33 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+6	35	56	#line 35 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+6	36	56		subret __move_return
+7	36	0	#line 36 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+7	37	0		mov __signed_stack_001claw_control, __claw_control_7qG2_power_7qG2_000
+7	36	2	#line 36 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+7	36	2	#line 36 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+7	37	2		mov __signed_stack_002claw_control, __claw_control_7qG2_angle_7qG2_000
+7	36	4	#line 36 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+7	36	4	#line 36 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+7	37	4		mov __D0claw_control, __claw_control_7qG2_direction_7qG2_000
+7	36	6	#line 36 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+7	37	6		mul __D0claw_control, __signed_stack_002claw_control, __D0claw_control
+7	37	10	#line 37 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+7	38	10	#pragma macro 33
+7	38	10		arrbuild __rotate_ports0, __constVal0
+7	38	14		mov __rotate_power0, __signed_stack_001claw_control
+7	38	16		mov __rotate_angle0, __D0claw_control
+7	38	18		mov __rotate_turnpct0, __constVal0
+7	38	20		mov __rotate_sync0, __constVal0
+7	38	22		mov __rotate_stop0, __constVal1
+7	38	24		mov __rotate_theRVP0, __constVal32
+7	38	26		mov __rotate_theRVI0, __constVal0
+7	38	28		mov __rotate_theRVD0, __constVal96
+7	38	30		subcall __RotateMotor0, ____RotateMotor0_return
+7	6448	32	#line 6448 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+7	37	32	#line 37 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+7	38	32	#line 38 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+7	39	32		subret __claw_control_return
+8	32	0	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+8	33	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc
+1	__RotateMotor0	195	NXTDefs.h
+2	__RotateMotor5	349	NXTDefs.h
+3	__ResetSensorSubroutine	503	NXTDefs.h
+4	__ReadLSBytes1	516	NXTDefs.h
+5	PlaySound	601	NXCDefs.h
+6	move	1000	C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h
+7	claw_control	1058	C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h
+8	__initialize_global_data	1092	C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc

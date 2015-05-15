@@ -2,6 +2,6 @@
 
 task main()
 {
-     move(20, POWER_NORMAL, FOWARD);
+     turn(180, POWER_NORMAL, LEFT);
 }
 

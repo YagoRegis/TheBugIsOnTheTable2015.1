@@ -1,0 +1,13 @@
+#include "theBugAPI.h"
+
+task main(){
+ move(38, POWER_NORMAL, FORWARD);
+ turn(85, POWER_NORMAL, RIGHT);
+ Wait(500);
+ move(50, POWER_NORMAL, FORWARD);
+
+
+
+
+
+}

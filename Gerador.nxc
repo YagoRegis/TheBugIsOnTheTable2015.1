@@ -1,0 +1,11 @@
+#include "theBugAPI.h"
+
+task main() {
+
+     //Moving to Suply Truck and Ambulance
+     move(10, POWER_NORMAL, BACKWARD);
+     turn(18, POWER_NORMAL, RIGHT);
+     Wait(50);
+     move(15, POWER_NORMAL, FORWARD);
+
+}

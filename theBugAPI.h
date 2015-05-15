@@ -30,7 +30,7 @@ sub turn(int angle, int power, int direction ){
 }
 sub move(int distance, int power, int direction){
   int angle = (distance * COMPLETE_ROTATION * direction)/(PI * WHEEL_DIAMETER);
-  RotateMotor(OUT_BC, power, angle);
+  RotateMotorEx(OUT_BC, power, angle, 0, true, true);
 }
 
 sub claw_control(int angle, int power, int direction){

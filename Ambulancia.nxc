@@ -3,42 +3,38 @@
 
 task main() {
 
-     //Moving to Suply Truck
-     move(38, POWER_NORMAL, FORWARD);
-     turn(85, POWER_NORMAL, RIGHT);
-     move(50, POWER_NORMAL, FORWARD);
-     //move(30, POWER_NORMAL, FORWARD);
-     turn(10, POWER_LOW, LEFT);
-     move(20, POWER_NORMAL, FORWARD);
+     //Moving to Suply Truck and Ambulance
+     move(38, POWER_HIGH, FORWARD);
+     turn(85, POWER_HIGH, RIGHT);
+     Wait(50);
+     move(50, POWER_HIGH, FORWARD);
+     turn(9, POWER_LOW, LEFT);
+     Wait(50);
+     move(20, POWER_HIGH, FORWARD);
      
-     move(100, POWER_NORMAL, FORWARD);
-     turn(55, POWER_LOW, LEFT);
-     move(20, POWER_NORMAL, FORWARD);
-     //move(20, POWER_NORMAL, BACKWARD);
-     //turn(175, POWER_NORMAL, LEFT);
-     //move(90, POWER_NORMAL, FORWARD);
-     //turn(30, POWER_NORMAL, LEFT);
-     //move(40, POWER_NORMAL, FORWARD);
+     //Moving to Yellow Mark
+     move(100, POWER_HIGH, FORWARD);
+     turn(45, POWER_HIGH, LEFT);
+     Wait(50);
+     move(25, POWER_HIGH, FORWARD);
+     
+     //Moving to Evacuation Signal
+     move(20, POWER_HIGH, BACKWARD);
+     turn(30, POWER_HIGH, LEFT);
+     Wait(50);
+     move(45, POWER_HIGH, BACKWARD);
+     turn(50, POWER_HIGH, RIGHT);
+     Wait(50);
+     move(28, POWER_HIGH, FORWARD);
+     
+     //Moving to base
+     move(30, POWER_HIGH, BACKWARD);
+     turn(140, POWER_HIGH, LEFT);
+     Wait(50);
+     move(60, POWER_HIGH, FORWARD);
+     turn(55, POWER_HIGH, LEFT);
+     Wait(50);
+     move(90, POWER_HIGH, FORWARD);
+     
 
-     //Moving to abulance and goin to yellow mark
-     //move(POWER_NORMAL, 22, FOWARD);
-     //turn(POWER_NORMAL, 65, RIGHT);
-     //move(POWER_NORMAL, 190, FOWARD);
-
-     //Goin to evacuation signal
-     //move(POWER_NORMAL, 30, BACKWARD);
-     //turn(POWER_NORMAL, 110, RIGHT);
-     //move(POWER_NORMAL, 24, FOWARD);
-     //turn(POWER_NORMAL, 90, LEFT);
-     //move(POWER_NORMAL, 10, FOWARD);
-
-     //Back to base
-     //turn(POWER_NORMAL, 180, LEFT);
-     //move(POWER_NORMAL, 100, FOWARD);
-     //turn(POWER_NORMAL, 90, RIGHT);
-     //move(POWER_NORMAL, 25, FOWARD);
-     //turn(POWER_NORMAL, 100, LEFT);
-     //move(POWER_NORMAL, 60, FOWARD);
-     //turn(POWER_NORMAL, 70, RIGHT);
-     //move(POWER_NORMAL, 30, FOWARD);
 }

@@ -1,60 +1,71 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__rotate_theAngle5	5	1	0	4	2
-1	__rotate_angle5	6	1	4	4	4
-2	__signed_stack_001move	6	1	8	4	8
-3	__D0move	6	1	12	4	6
-4	__rotateMutex1	9	0	16	4	2
-5	__constValf13P571712	10	0	20	4	1
-6	__rotateMutex2	9	0	24	4	2
-7	__rotate_OldRotCount5	4	1	28	2	2
-8	__rotate_RotCount5	4	1	30	2	4
-9	__move_7qG2_direction_7qG2_000	4	1	32	2	2
-10	__move_7qG2_angle_7qG2_000	4	1	34	2	2
-11	__move_7qG2_distance_7qG2_000	4	1	36	2	2
-12	__move_7qG2_power_7qG2_000	4	1	38	2	2
-13	__rotate_turnpct5	2	1	40	1	3
-14	__rotate_stop5	1	1	41	1	2
-15	____RotateMotor5_return	1	1	42	1	3
-16	__constVal1	2	0	43	1	3
-17	__constVal0	2	1	44	1	6
-18	__rotate_sync5	1	1	45	1	2
-19	__constVal96	2	0	46	1	1
-20	____initialize_global_data_return	1	1	47	1	3
-21	__rotate_power5	1	1	48	1	4
-22	__rotate_firstPort5	1	1	49	1	5
-23	__move_return	1	1	50	1	3
-24	__rotate_theRVD5	1	1	51	1	2
-25	__rotate_rs5	1	1	52	1	2
-26	__rotate_theRVI5	1	1	53	1	2
-27	__rotate_theRS5	1	1	54	1	3
-28	__rotate_theRVP5	1	1	55	1	2
-29	__rotate_theRM5	1	1	56	1	4
-30	__rotate_theUF5	1	1	57	1	6
-31	__rotate_theTurnPct5	2	1	58	1	4
-32	__constVal32	2	0	59	1	4
-33	__rotate_theOM5	1	1	60	1	7
-34	__rotate_thePower5	2	1	61	1	4
-35	__rotate_ports5	7	0	62	4	6
-36	__rotate_ports5.__rotate_ports5_type	1	0	0	1	0
-37	__OUT_BC	7	0	64	4	1
-38	__OUT_BC.__OUT_BC_type	1	0	0	1	0
+0	__signed_stack_005turn	6	1	0	4	2
+1	__signed_stack_004turn	6	1	4	4	2
+2	__signed_stack_006turn	6	1	8	4	2
+3	__float_stack_001turn	10	1	12	4	8
+4	__signed_stack_007turn	6	1	16	4	2
+5	__signed_stack_003turn	6	1	20	4	4
+6	__DF0turn	10	1	24	4	2
+7	__D0turn	6	1	28	4	6
+8	__signed_stack_001turn	6	1	32	4	4
+9	__rotate_theAngle5	5	1	36	4	2
+10	__signed_stack_002turn	6	1	40	4	2
+11	__rotate_angle5	6	1	44	4	4
+12	__constValf3P1416	10	0	48	4	1
+13	__constValf6P65	10	0	52	4	1
+14	__constValf6P785856	10	0	56	4	1
+15	__rotateMutex1	9	0	60	4	2
+16	__rotateMutex2	9	0	64	4	2
+17	__turn_7qG2_amount_turns_7qG2_000	4	1	68	2	2
+18	__constVal180	4	0	70	2	2
+19	__rotate_RotCount5	4	1	72	2	4
+20	__turn_7qG2_direction_7qG2_000	4	1	74	2	2
+21	__turn_7qG2_angle_7qG2_000	4	1	76	2	2
+22	__turn_7qG2_power_7qG2_000	4	1	78	2	2
+23	__rotate_OldRotCount5	4	1	80	2	2
+24	__turn_7qG2_car_arc_7qG2_000	4	1	82	2	2
+25	__turn_return	1	1	84	1	3
+26	____initialize_global_data_return	1	1	85	1	3
+27	__rotate_theOM5	1	1	86	1	7
+28	__rotate_theUF5	1	1	87	1	6
+29	__rotate_theRS5	1	1	88	1	3
+30	__rotate_theRM5	1	1	89	1	4
+31	__rotate_turnpct5	2	1	90	1	3
+32	__rotate_firstPort5	1	1	91	1	5
+33	__rotate_power5	1	1	92	1	4
+34	__rotate_stop5	1	1	93	1	2
+35	__rotate_sync5	1	1	94	1	2
+36	__rotate_theRVP5	1	1	95	1	2
+37	__constVal1	2	0	96	1	2
+38	__constVal32	2	0	97	1	3
+39	____RotateMotor5_return	1	1	98	1	3
+40	__constVal0	2	1	99	1	3
+41	__rotate_theTurnPct5	2	1	100	1	4
+42	__rotate_theRVD5	1	1	101	1	2
+43	__rotate_theRVI5	1	1	102	1	2
+44	__rotate_thePower5	2	1	103	1	4
+45	__rotate_rs5	1	1	104	1	2
+46	__OUT_BC	7	0	106	4	1
+47	__OUT_BC.__OUT_BC_type	1	0	0	1	0
+48	__rotate_ports5	7	0	108	4	6
+49	__rotate_ports5.__rotate_ports5_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
 0	4	0	#line 4 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\TestProgram.nxc"
 0	5	0		subcall __initialize_global_data, ____initialize_global_data_return
 0	4	2	#line 4 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\TestProgram.nxc"
 0	4	2	#line 4 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\TestProgram.nxc"
-0	5	2		set __move_7qG2_distance_7qG2_000, 20
+0	5	2		set __turn_7qG2_angle_7qG2_000, 180
 0	4	5	#line 4 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\TestProgram.nxc"
 0	4	5	#line 4 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\TestProgram.nxc"
-0	5	5		set __move_7qG2_power_7qG2_000, 75
+0	5	5		set __turn_7qG2_power_7qG2_000, 75
 0	4	8	#line 4 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\TestProgram.nxc"
 0	4	8	#line 4 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\TestProgram.nxc"
-0	5	8		set __move_7qG2_direction_7qG2_000, 1
+0	5	8		set __turn_7qG2_direction_7qG2_000, 1
 0	4	11	#line 4 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\TestProgram.nxc"
 0	5	11	#line 5 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\TestProgram.nxc"
-0	6	11		subcall move, __move_return
+0	6	11		subcall turn, __turn_return
 0	5	13	#line 5 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\TestProgram.nxc"
 0	6	13		exit -1, -1
 1	5332	0		brtst 4, __rotate_Done5, __rotate_angle5
@@ -93,53 +104,87 @@ Clump	Line	PC	Source
 1	5378	144		brtst 4, __rotate_Done5, __rotate_theTurnPct5
 1	5379	147		setout __rotate_ports5, 0, __constVal32
 1	5381	152		subret ____RotateMotor5_return
-2	30	0	#line 30 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
-2	31	0		mov __signed_stack_001move, __move_7qG2_distance_7qG2_000
-2	30	2	#line 30 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
-2	30	2	#line 30 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
-2	31	2		set __D0move, 360
-2	30	5	#line 30 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
-2	31	5		mul __signed_stack_001move, __signed_stack_001move, __D0move
-2	30	9	#line 30 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
-2	30	9	#line 30 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
-2	31	9		mov __D0move, __move_7qG2_direction_7qG2_000
-2	30	11	#line 30 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
-2	31	11		mul __signed_stack_001move, __signed_stack_001move, __D0move
-2	30	15	#line 30 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
-2	30	15	#line 30 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
-2	31	15	#line 31 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
-2	32	15		div __move_7qG2_angle_7qG2_000, __signed_stack_001move, __constValf13P571712
-2	31	19	#line 31 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
-2	31	19	#line 31 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
-2	32	19		mov __signed_stack_001move, __move_7qG2_power_7qG2_000
-2	31	21	#line 31 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
-2	31	21	#line 31 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
-2	32	21		mov __D0move, __move_7qG2_angle_7qG2_000
-2	32	23	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
-2	33	23	#pragma macro 35
-2	33	23		acquire __rotateMutex1
-2	33	24		acquire __rotateMutex2
-2	33	25		mov __rotate_ports5, __OUT_BC
-2	33	27		mov __rotate_power5, __signed_stack_001move
-2	33	29		mov __rotate_angle5, __D0move
-2	33	31		mov __rotate_turnpct5, __constVal0
-2	33	33		mov __rotate_sync5, __constVal0
-2	33	35		mov __rotate_stop5, __constVal1
-2	33	37		mov __rotate_theRVP5, __constVal32
-2	33	39		mov __rotate_theRVI5, __constVal0
-2	33	41		mov __rotate_theRVD5, __constVal96
-2	33	43		subcall __RotateMotor5, ____RotateMotor5_return
-2	33	45		release __rotateMutex2
-2	33	46		release __rotateMutex1
-2	6156	47	#line 6156 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
-2	32	47	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
-2	34	47	#line 34 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
-2	35	47		subret __move_return
+2	24	0	#line 24 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	25	0		mov __signed_stack_001turn, __turn_7qG2_angle_7qG2_000
+2	24	2	#line 24 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	24	2	#line 24 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	24	2	#line 24 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	25	2		mul __float_stack_001turn, __signed_stack_001turn, __constValf3P1416
+2	24	6	#line 24 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	24	6	#line 24 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	24	6	#line 24 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	25	6		mul __float_stack_001turn, __float_stack_001turn, __constValf6P65
+2	24	10	#line 24 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	25	10	#line 25 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	26	10		mov __DF0turn, __constVal180
+2	25	12	#line 25 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	26	12		div __turn_7qG2_car_arc_7qG2_000, __float_stack_001turn, __DF0turn
+2	25	16	#line 25 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	25	16	#line 25 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	26	16		mov __float_stack_001turn, __constVal180
+2	25	18	#line 25 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	25	18	#line 25 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	26	18		mov __D0turn, __turn_7qG2_car_arc_7qG2_000
+2	25	20	#line 25 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	26	20		mul __float_stack_001turn, __float_stack_001turn, __D0turn
+2	25	24	#line 25 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	25	24	#line 25 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	27	24	#line 27 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	28	24		div __turn_7qG2_amount_turns_7qG2_000, __float_stack_001turn, __constValf6P785856
+2	27	28	#line 27 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	27	28	#line 27 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	28	28		mov __signed_stack_001turn, __turn_7qG2_power_7qG2_000
+2	27	30	#line 27 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	27	30	#line 27 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	28	30		mov __signed_stack_002turn, __turn_7qG2_amount_turns_7qG2_000
+2	27	32	#line 27 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	27	32	#line 27 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	28	32		set __signed_stack_003turn, 100
+2	27	35	#line 27 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	28	35	#line 28 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	29	35		mov __D0turn, __turn_7qG2_direction_7qG2_000
+2	28	37	#line 28 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	29	37		mul __signed_stack_003turn, __signed_stack_003turn, __D0turn
+2	28	41	#line 28 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	28	41	#line 28 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	29	41		set __signed_stack_004turn, 1
+2	28	44	#line 28 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	28	44	#line 28 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	29	44		set __signed_stack_005turn, 1
+2	28	47	#line 28 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	28	47	#line 28 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	29	47		set __signed_stack_006turn, 40
+2	28	50	#line 28 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	28	50	#line 28 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	29	50		set __signed_stack_007turn, 40
+2	28	53	#line 28 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	28	53	#line 28 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	29	53		set __D0turn, 90
+2	29	56	#line 29 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	30	56	#pragma macro 35
+2	30	56		acquire __rotateMutex1
+2	30	57		acquire __rotateMutex2
+2	30	58		mov __rotate_ports5, __OUT_BC
+2	30	60		mov __rotate_power5, __signed_stack_001turn
+2	30	62		mov __rotate_angle5, __signed_stack_002turn
+2	30	64		mov __rotate_turnpct5, __signed_stack_003turn
+2	30	66		mov __rotate_sync5, __signed_stack_004turn
+2	30	68		mov __rotate_stop5, __signed_stack_005turn
+2	30	70		mov __rotate_theRVP5, __signed_stack_006turn
+2	30	72		mov __rotate_theRVI5, __signed_stack_007turn
+2	30	74		mov __rotate_theRVD5, __D0turn
+2	30	76		subcall __RotateMotor5, ____RotateMotor5_return
+2	30	78		release __rotateMutex2
+2	30	79		release __rotateMutex1
+2	6082	80	#line 6082 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	29	80	#line 29 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	30	80	#line 30 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
+2	31	80		subret __turn_return
 3	8	0	#line 8 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\TestProgram.nxc"
 3	9	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\TestProgram.nxc
 1	__RotateMotor5	16	NXTDefs.h
-2	move	170	C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h
-3	__initialize_global_data	219	C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\TestProgram.nxc
+2	turn	170	C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h
+3	__initialize_global_data	252	C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\TestProgram.nxc

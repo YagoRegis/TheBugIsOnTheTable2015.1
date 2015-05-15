@@ -1,0 +1,12 @@
+#include "theBugAPI.h"
+
+task main() {
+
+
+     move(12, POWER_NORMAL, FORWARD);
+     turn(87, POWER_NORMAL, LEFT);
+     Wait(1);
+     move(67, POWER_NORMAL, FORWARD);
+     claw_control(70, POWER_HIGH, FORWARD);
+     move(25, POWER_NORMAL, BACKWARD);
+}

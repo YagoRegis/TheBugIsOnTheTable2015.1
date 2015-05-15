@@ -2,6 +2,29 @@
 
 task main() {
 
-  move(60, POWER_NORMAL, FOWARD);
-  claw_control(60, POWER_NORMAL, FORWARD)
+
+  // Indica a porta que o sensor está conectado, neste caso porta 3.
+	SetSensorUltrasonic(IN_2);
+
+	while(true) {
+		// O sensor precisa de um tempo para ler os valores.
+		// Por isso tem um delay de 0.5 segundos.
+		Wait(500);
+
+		// Mostra o valor lido pelo sensor
+		ClearScreen();
+        NumOut(0, 0, SensorUS(IN_2));
+
+		if(SensorUS(IN_2) < 22) {
+			Off(OUT_BC);
+			break;
+		}
+		else {
+       move(15, POWER_NORMAL, FORWARD);
+		}
+	}
+	Wait(500);
+  claw_control(45, POWER_NORMAL, BACKWARD);
+  PlaySound(SOUND_UP);
+  //move(60, POWER_NORMAL, BACKWARD);
 }
