@@ -2,6 +2,6 @@
 
 task main()
 {
-     turn(180, POWER_NORMAL, RIGHT);
+     claw_control(100, POWER_NORMAL, BACKWARD);
 }
 

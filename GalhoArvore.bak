@@ -4,9 +4,9 @@ task main() {
 
 
      move(12, POWER_NORMAL, FORWARD);
-     turn(80, POWER_NORMAL, LEFT);
+     turn(87, POWER_NORMAL, LEFT);
      Wait(1);
-     move(65, POWER_NORMAL, FORWARD);
-     claw_control(80, POWER_HIGH, FORWARD);
+     move(67, POWER_NORMAL, FORWARD);
+     claw_control(70, POWER_HIGH, BACKWARD);
      move(60, POWER_NORMAL, BACKWARD);
 }
