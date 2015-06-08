@@ -1,0 +1,22 @@
+//Robot start at Base
+#include "theBugAPI.h"
+
+task main() {
+
+     move(43, POWER_NORMAL, FORWARD);
+     turn(85, POWER_NORMAL, RIGHT);
+     Wait(1);
+     move(67, POWER_NORMAL, FORWARD);
+     turn(78, POWER_LOW, LEFT);
+     Wait(1);
+     move(22, POWER_NORMAL, FORWARD);
+     claw_control(60, POWER_NORMAL, BACKWARD);
+     move(15, POWER_NORMAL, BACKWARD);
+     turn(85, POWER_NORMAL, RIGHT);
+     Wait(1);
+     move(80, POWER_NORMAL, FORWARD);
+     turn(44, POWER_NORMAL, RIGHT);
+     Wait(1);
+     move(65, POWER_NORMAL, FORWARD);
+
+}

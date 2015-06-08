@@ -2,11 +2,20 @@
 
 task main() {
 
-
-     move(12, POWER_NORMAL, FORWARD);
-     turn(87, POWER_NORMAL, LEFT);
+     //move(13, POWER_NORMAL, FORWARD);
+     //turn(86, POWER_NORMAL, LEFT);
+     //Wait(1);
+     move(70, POWER_NORMAL, FORWARD);
+     claw_control(100, POWER_HIGH, BACKWARD);
+     claw_control(85, POWER_HIGH, FORWARD);
+     move(30, POWER_NORMAL, BACKWARD);
+     turn(85, POWER_NORMAL, RIGHT);
      Wait(1);
-     move(67, POWER_NORMAL, FORWARD);
-     claw_control(70, POWER_HIGH, BACKWARD);
-     move(60, POWER_NORMAL, BACKWARD);
+     move(22, POWER_NORMAL, BACKWARD);
+     turn(90, POWER_NORMAL, LEFT);
+     Wait(1);
+     //claw_control(30, POWER_NORMAL, FORWARD);
+     move(39, POWER_NORMAL, FORWARD);
+     claw_control(70, POWER_NORMAL, BACKWARD);
+     move(70, POWER_NORMAL, BACKWARD);
 }

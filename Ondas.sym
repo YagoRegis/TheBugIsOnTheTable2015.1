@@ -21,10 +21,10 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 18	__D0SetSensorLowspeed_inline_SetSensorUltrasonic	6	1	72	4	2
 19	__D0move	6	1	76	4	6
 20	__D0claw_control	6	1	80	4	4
-21	__D0main	6	1	84	4	13
+21	__D0main	6	1	84	4	15
 22	__rotateMutex2	9	0	88	4	2
 23	__signed_stack_003PlaySound	6	1	92	4	14
-24	__constValf13P571712	10	0	96	4	1
+24	__constValf13P57168176	10	0	96	4	1
 25	__rotate_angle0	6	1	100	4	4
 26	__signed_stack_002PlaySound	6	1	104	4	14
 27	__signed_stack_001PlaySound	6	1	108	4	44
@@ -52,7 +52,7 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 49	__PlaySound_return	1	1	153	1	3
 50	__claw_control_return	1	1	154	1	3
 51	____initialize_global_data_return	1	1	155	1	3
-52	__constVal96	2	0	156	1	3
+52	__constVal96	2	0	156	1	4
 53	__move_return	1	1	157	1	3
 54	__RLSBResult1	2	1	158	1	7
 55	__SetSensorUltrasonic_7qG2_port_7qG2_000_inline_main	1	1	159	1	2
@@ -71,8 +71,8 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 68	__rotate_firstPort5	1	1	172	1	5
 69	__rotate_firstPort0	1	1	173	1	5
 70	__rotate_sync0	1	1	174	1	2
-71	__constVal63	2	0	175	1	1
-72	__constValNeg1	2	0	176	1	1
+71	__constVal63	2	0	175	1	2
+72	__constValNeg1	2	0	176	1	2
 73	__rotate_power0	1	1	177	1	4
 74	__rotate_stop0	1	1	178	1	2
 75	__rotate_theRM0	1	1	179	1	4
@@ -81,9 +81,9 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 78	__rotate_turnpct0	2	1	182	1	3
 79	__rotate_theUF0	1	1	183	1	6
 80	____RotateMotor5_return	1	1	184	1	3
-81	__constVal3	2	0	185	1	1
-82	__constVal0	2	1	186	1	16
-83	__constVal32	2	0	187	1	11
+81	__constVal3	2	0	185	1	2
+82	__constVal0	2	1	186	1	19
+83	__constVal32	2	0	187	1	14
 84	__constVal1	2	0	188	1	13
 85	__ResetSensorPort	1	1	189	1	3
 86	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	190	1	2
@@ -142,7 +142,7 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 139	__rotate_ports5.__rotate_ports5_type	1	0	0	1	0
 140	__rotate_ports0	7	0	266	4	6
 141	__rotate_ports0.__rotate_ports0_type	1	0	0	1	0
-142	__OUT_BC	7	0	268	4	2
+142	__OUT_BC	7	0	268	4	3
 143	__OUT_BC.__OUT_BC_type	1	0	0	1	0
 144	__RLSLastGoodRead1	7	0	270	4	2
 145	__RLSLastGoodRead1.__RLSLastGoodRead1_type	1	0	0	1	0
@@ -152,12 +152,12 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 149	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
-0	6	0	#line 6 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	7	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	6	2	#line 6 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	6	2	#line 6 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	7	2		set __SetSensorUltrasonic_7qG2_port_7qG2_000_inline_main, 1
-0	6	5	#line 6 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	13	0	#line 13 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	14	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	13	2	#line 13 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	13	2	#line 13 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	14	2		set __SetSensorUltrasonic_7qG2_port_7qG2_000_inline_main, 1
+0	13	5	#line 13 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
 0	4352	5	#line 4352 "NXCDefs.h"
 0	4353	5		mov __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main, __SetSensorUltrasonic_7qG2_port_7qG2_000_inline_main
 0	4352	7	#line 4352 "NXCDefs.h"
@@ -206,20 +206,20 @@ Clump	Line	PC	Source
 0	4278	46	#line 4278 "NXCDefs.h"
 0	4345	46	#line 4345 "NXCDefs.h"
 0	4352	46	#line 4352 "NXCDefs.h"
-0	8	46	#line 8 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	8	46	#line 8 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	9	46		set __D0main, 1
-0	11	49	#line 11 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	12	49		tst 5, __D0main, __D0main
-0	11	52	#line 11 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	12	52		brtst 4, __ASM_Label_653, __D0main
-0	11	55	#line 11 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	12	55		set __Wait_7qG2_ms_7qG2_000_inline_main, 100
-0	11	58	#line 11 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	15	46	#line 15 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	15	46	#line 15 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	16	46		set __D0main, 1
+0	18	49	#line 18 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	19	49		tst 5, __D0main, __D0main
+0	18	52	#line 18 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	19	52		brtst 4, __ASM_Label_653, __D0main
+0	18	55	#line 18 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	19	55		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
+0	18	58	#line 18 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
 0	8551	58	#line 8551 "NXCDefs.h"
 0	8552	58		waitv __Wait_7qG2_ms_7qG2_000_inline_main
 0	8551	60	#line 8551 "NXCDefs.h"
-0	14	60	#line 14 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	21	60	#line 21 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
 0	6678	60	#line 6678 "NXCDefs.h"
 0	6679	60	#pragma macro 6
 0	6679	60		mov __PointOutArgs.Location.X, __constVal200
@@ -228,109 +228,116 @@ Clump	Line	PC	Source
 0	6679	66		syscall 14, __PointOutArgs
 0	6584	69	#line 6584 "NXCDefs.h"
 0	6678	69	#line 6678 "NXCDefs.h"
-0	15	69	#line 15 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	15	69	#line 15 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	16	69		set __signed_stack_001main, 0
-0	15	72	#line 15 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	15	72	#line 15 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	16	72		set __signed_stack_002main, 0
-0	15	75	#line 15 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	15	75	#line 15 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	16	75	#pragma macro 26
-0	16	75		acquire __RLSBmutex1
-0	16	76		mov __RLSReadBuf1, __RLSBbufLSWrite1
-0	16	78		set __RLSBytesCount1, 1
-0	16	81		wait 15
-0	16	83		subcall __ReadLSBytes1, ____ReadLSBytes1_return
-0	16	85		index __D0main, __RLSReadBuf1, 65535
-0	16	89		release __RLSBmutex1
+0	22	69	#line 22 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	22	69	#line 22 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	23	69		set __signed_stack_001main, 0
+0	22	72	#line 22 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	22	72	#line 22 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	23	72		set __signed_stack_002main, 0
+0	22	75	#line 22 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	22	75	#line 22 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	23	75	#pragma macro 26
+0	23	75		acquire __RLSBmutex1
+0	23	76		mov __RLSReadBuf1, __RLSBbufLSWrite1
+0	23	78		set __RLSBytesCount1, 1
+0	23	81		wait 15
+0	23	83		subcall __ReadLSBytes1, ____ReadLSBytes1_return
+0	23	85		index __D0main, __RLSReadBuf1, 65535
+0	23	89		release __RLSBmutex1
 0	6598	90	#line 6598 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	17	90	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	17	90	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	18	90		mov __TextOutArgs.Location.X, __signed_stack_001main
-0	17	92	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	18	92		mov __TextOutArgs.Location.Y, __signed_stack_002main
-0	17	94	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	18	94		set __TextOutArgs.Options, 0
-0	17	97	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	18	97		numtostr __TextOutArgs.Text, __D0main
-0	17	100	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	18	100		syscall 13, __TextOutArgs
-0	17	103	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	18	103		mov __D0main, __TextOutArgs.Result
-0	17	105	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	17	105	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	17	105	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	17	105	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	18	105	#pragma macro 26
-0	18	105		acquire __RLSBmutex1
-0	18	106		mov __RLSReadBuf1, __RLSBbufLSWrite1
-0	18	108		set __RLSBytesCount1, 1
-0	18	111		wait 15
-0	18	113		subcall __ReadLSBytes1, ____ReadLSBytes1_return
-0	18	115		index __D0main, __RLSReadBuf1, 65535
-0	18	119		release __RLSBmutex1
+0	24	90	#line 24 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	24	90	#line 24 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	25	90		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	24	92	#line 24 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	25	92		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	24	94	#line 24 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	25	94		set __TextOutArgs.Options, 0
+0	24	97	#line 24 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	25	97		numtostr __TextOutArgs.Text, __D0main
+0	24	100	#line 24 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	25	100		syscall 13, __TextOutArgs
+0	24	103	#line 24 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	25	103		mov __D0main, __TextOutArgs.Result
+0	24	105	#line 24 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	24	105	#line 24 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	24	105	#line 24 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	24	105	#line 24 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	25	105	#pragma macro 26
+0	25	105		acquire __RLSBmutex1
+0	25	106		mov __RLSReadBuf1, __RLSBbufLSWrite1
+0	25	108		set __RLSBytesCount1, 1
+0	25	111		wait 15
+0	25	113		subcall __ReadLSBytes1, ____ReadLSBytes1_return
+0	25	115		index __D0main, __RLSReadBuf1, 65535
+0	25	119		release __RLSBmutex1
 0	6622	120	#line 6622 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	17	120	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	18	120		mov __signed_stack_001main, __D0main
-0	17	122	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	18	122		set __D0main, 22
-0	17	125	#line 17 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	18	125		cmp 0, __D0main, __signed_stack_001main, __D0main
-0	18	129	#line 18 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	19	129		brtst 4, __ASM_Label_666, __D0main
-0	19	132	#line 19 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	20	132	#pragma macro 7
-0	20	132		setout __OUT_BC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	24	120	#line 24 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	25	120		mov __signed_stack_001main, __D0main
+0	24	122	#line 24 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	25	122		set __D0main, 23
+0	24	125	#line 24 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	25	125		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	25	129	#line 25 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	26	129		brtst 4, __ASM_Label_666, __D0main
+0	26	132	#line 26 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	27	132	#pragma macro 7
+0	27	132		setout __OUT_BC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
 0	6636	155	#line 6636 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	19	155	#line 19 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	20	155	#line 20 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	21	155		jmp __ASM_Label_653
-0	20	157	#line 20 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	22	157	#line 22 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	23	157		jmp __ASM_Label_667
-0	22	159	#line 22 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	23	159		set __move_7qG2_distance_7qG2_000, 15
-0	22	162	#line 22 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	22	162	#line 22 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	23	162		set __move_7qG2_power_7qG2_000, 75
-0	22	165	#line 22 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	22	165	#line 22 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	23	165		set __move_7qG2_direction_7qG2_000, 1
-0	22	168	#line 22 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	23	168	#line 23 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	24	168		subcall move, __move_return
-0	23	170	#line 23 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	25	170	#line 25 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	25	170	#line 25 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	26	170		jmp __ASM_Label_652
-0	25	172	#line 25 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	25	172	#line 25 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	26	172		set __Wait_7qG2_ms_7qG2_000_inline_main, 500
-0	25	175	#line 25 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	8551	175	#line 8551 "NXCDefs.h"
-0	8552	175		waitv __Wait_7qG2_ms_7qG2_000_inline_main
-0	8551	177	#line 8551 "NXCDefs.h"
-0	26	177	#line 26 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	26	177	#line 26 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	27	177		set __claw_control_7qG2_angle_7qG2_000, 45
-0	26	180	#line 26 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	26	180	#line 26 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	27	180		set __claw_control_7qG2_power_7qG2_000, 75
-0	26	183	#line 26 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	26	183	#line 26 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	27	183		mov __claw_control_7qG2_direction_7qG2_000, __constValNeg1
-0	26	185	#line 26 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	27	185	#line 27 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	28	185		subcall claw_control, __claw_control_return
-0	27	187	#line 27 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	27	187	#line 27 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	28	187		set __PlaySound_7qG2_aCode_7qG2_000, 3
-0	27	190	#line 27 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	29	190	#line 29 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	30	190		subcall PlaySound, __PlaySound_return
-0	29	192	#line 29 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-0	30	192		exit -1, -1
+0	26	155	#line 26 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	27	155	#line 27 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	28	155		jmp __ASM_Label_653
+0	27	157	#line 27 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	29	157	#line 29 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	30	157		jmp __ASM_Label_667
+0	29	159	#line 29 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	30	159		set __D0main, 50
+0	30	162	#line 30 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	31	162	#pragma macro 7
+0	31	162		setout __OUT_BC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	6647	185	#line 6647 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	30	185	#line 30 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	32	185	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	32	185	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	33	185		jmp __ASM_Label_652
+0	32	187	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	32	187	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	33	187		set __Wait_7qG2_ms_7qG2_000_inline_main, 50
+0	32	190	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	8551	190	#line 8551 "NXCDefs.h"
+0	8552	190		waitv __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	192	#line 8551 "NXCDefs.h"
+0	33	192	#line 33 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	33	192	#line 33 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	34	192		set __claw_control_7qG2_angle_7qG2_000, 60
+0	33	195	#line 33 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	33	195	#line 33 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	34	195		set __claw_control_7qG2_power_7qG2_000, 75
+0	33	198	#line 33 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	33	198	#line 33 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	34	198		mov __claw_control_7qG2_direction_7qG2_000, __constValNeg1
+0	33	200	#line 33 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	34	200	#line 34 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	35	200		subcall claw_control, __claw_control_return
+0	34	202	#line 34 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	34	202	#line 34 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	35	202		set __move_7qG2_distance_7qG2_000, 70
+0	34	205	#line 34 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	34	205	#line 34 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	35	205		set __move_7qG2_power_7qG2_000, 75
+0	34	208	#line 34 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	34	208	#line 34 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	35	208		mov __move_7qG2_direction_7qG2_000, __constValNeg1
+0	34	210	#line 34 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	35	210	#line 35 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	36	210		subcall move, __move_return
+0	35	212	#line 35 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	35	212	#line 35 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	36	212		set __PlaySound_7qG2_aCode_7qG2_000, 3
+0	35	215	#line 35 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	36	215	#line 36 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	37	215		subcall PlaySound, __PlaySound_return
+0	36	217	#line 36 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+0	37	217		exit -1, -1
 1	5067	0		brtst 4, __rotate_Done0, __rotate_angle0
 1	5068	3		sign __rotate_thePower0, __rotate_angle0
 1	5069	6		abs __rotate_theAngle0, __rotate_angle0
@@ -849,7 +856,7 @@ Clump	Line	PC	Source
 6	31	15	#line 31 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
 6	31	15	#line 31 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
 6	32	15	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
-6	33	15		div __move_7qG2_angle_7qG2_000, __signed_stack_001move, __constValf13P571712
+6	33	15		div __move_7qG2_angle_7qG2_000, __signed_stack_001move, __constValf13P57168176
 6	32	19	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
 6	32	19	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
 6	33	19		mov __signed_stack_001move, __move_7qG2_power_7qG2_000
@@ -911,16 +918,16 @@ Clump	Line	PC	Source
 7	37	32	#line 37 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
 7	38	32	#line 38 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h"
 7	39	32		subret __claw_control_return
-8	32	0	#line 32 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
-8	33	0		subret ____initialize_global_data_return
+8	39	0	#line 39 "C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc"
+8	40	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc
-1	__RotateMotor0	195	NXTDefs.h
-2	__RotateMotor5	349	NXTDefs.h
-3	__ResetSensorSubroutine	503	NXTDefs.h
-4	__ReadLSBytes1	516	NXTDefs.h
-5	PlaySound	601	NXCDefs.h
-6	move	1000	C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h
-7	claw_control	1058	C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h
-8	__initialize_global_data	1092	C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc
+1	__RotateMotor0	220	NXTDefs.h
+2	__RotateMotor5	374	NXTDefs.h
+3	__ResetSensorSubroutine	528	NXTDefs.h
+4	__ReadLSBytes1	541	NXTDefs.h
+5	PlaySound	626	NXCDefs.h
+6	move	1025	C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h
+7	claw_control	1083	C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\.\theBugAPI.h
+8	__initialize_global_data	1117	C:\Users\Yago\Desktop\UnB Geral\último semestre\robot\TheBugIsOnTheTable2015.1\Ondas.nxc

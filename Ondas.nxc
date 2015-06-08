@@ -1,7 +1,14 @@
 #include "theBugAPI.h"
 
 task main() {
-
+     /*
+     move(25, POWER_NORMAL, FORWARD);
+     turn(90,POWER_NORMAL, RIGHT);
+     Wait(50);
+     move(45, POWER_NORMAL, FORWARD);
+     Wait(50);
+     claw_control(70, POWER_NORMAL, BACKWARD);
+     */
 
   // Indica a porta que o sensor está conectado, neste caso porta 3.
 	SetSensorUltrasonic(IN_2);
@@ -9,22 +16,22 @@ task main() {
 	while(true) {
 		// O sensor precisa de um tempo para ler os valores.
 		// Por isso tem um delay de 0.5 segundos.
-		Wait(100);
+		Wait(1000);
 
 		// Mostra o valor lido pelo sensor
 		ClearScreen();
         NumOut(0, 0, SensorUS(IN_2));
 
-		if(SensorUS(IN_2) < 22) {
+		if(SensorUS(IN_2) < 23) {
 			Off(OUT_BC);
 			break;
 		}
 		else {
-       move(15, POWER_NORMAL, FORWARD);
+       OnFwd(OUT_BC, POWER_LOW);
 		}
 	}
-	Wait(500);
-  claw_control(45, POWER_NORMAL, BACKWARD);
+	Wait(50);
+  claw_control(60, POWER_NORMAL, BACKWARD);
+  move(70, POWER_NORMAL, BACKWARD);
   PlaySound(SOUND_UP);
-  //move(60, POWER_NORMAL, BACKWARD);
 }

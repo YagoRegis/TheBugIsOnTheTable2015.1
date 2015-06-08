@@ -2,7 +2,7 @@
 
 task main()
 {
-     claw_control(100, POWER_NORMAL, BACKWARD);
-     claw_control(100, POWER_NORMAL, FORWARD);
+     claw_control(100, POWER_HIGH, BACKWARD);
+     claw_control(100, POWER_HIGH, FORWARD);
 }
 
