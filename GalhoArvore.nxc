@@ -1,22 +1,27 @@
+/*
+ * Initial Position:
+ * Right side of the "claw", aligned at the end of the "M" by left-inside.
+ */
 #include "theBugAPI.h"
 
 task main() {
 
-     //move(13, POWER_NORMAL, FORWARD);
-     //turn(86, POWER_NORMAL, LEFT);
-     //Wait(1);
+     // Moving to the tree.
      move(70, POWER_NORMAL, FORWARD);
      claw_control(10, POWER_HIGH, BACKWARD);
      claw_control(90, POWER_HIGH, BACKWARD);
-     claw_control(85, POWER_HIGH, FORWARD);
+     claw_control(100, POWER_HIGH, FORWARD);
+     
+     // Moving to catch the animals.
      move(30, POWER_NORMAL, BACKWARD);
      turn(85, POWER_NORMAL, RIGHT);
      Wait(1);
      move(22, POWER_NORMAL, BACKWARD);
      turn(90, POWER_NORMAL, LEFT);
      Wait(1);
-     //claw_control(30, POWER_NORMAL, FORWARD);
      move(39, POWER_NORMAL, FORWARD);
      claw_control(70, POWER_NORMAL, BACKWARD);
-     move(70, POWER_NORMAL, BACKWARD);
+     
+     // Moving to base.
+     move(70, POWER_HIGH, BACKWARD);
 }
