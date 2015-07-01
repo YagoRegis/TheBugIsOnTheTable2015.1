@@ -1,0 +1,55 @@
+#define VOL 3
+#define A3 220
+#define AS3 233
+#define B3 247
+#define C 262
+#define CS 277
+#define D 294
+#define DS 311
+#define E 330
+#define F 349
+#define FS 370
+#define G 392
+#define GS 415
+#define A 440
+#define AS 466
+#define B 494
+#define SEMIBREVE_PONTUADA 4000
+#define SEMINIMA_PONTUADA 1000
+#define SEMINIMA 666
+#define COLCHEIA 333
+#define SEMICOLCHEIA 166
+
+sub background_strings() {
+    PlayToneEx(659, COLCHEIA, VOL, FALSE); Wait(COLCHEIA);
+    PlayToneEx(440, COLCHEIA, VOL, FALSE); Wait(COLCHEIA);
+    PlayToneEx(523, SEMICOLCHEIA, VOL,FALSE); Wait(SEMICOLCHEIA);
+    PlayToneEx(587, SEMICOLCHEIA, VOL, FALSE); Wait(SEMICOLCHEIA);
+    PlayToneEx(659, COLCHEIA, VOL, FALSE); Wait(COLCHEIA);
+    PlayToneEx(440, COLCHEIA, VOL, FALSE); Wait(COLCHEIA);
+    PlayToneEx(523, SEMICOLCHEIA, VOL,FALSE); Wait(SEMICOLCHEIA);
+    PlayToneEx(587, SEMICOLCHEIA, VOL, FALSE); Wait(SEMICOLCHEIA);
+    PlayToneEx(659, COLCHEIA, VOL, FALSE); Wait(COLCHEIA);
+    PlayToneEx(440, COLCHEIA, VOL, FALSE); Wait(COLCHEIA);
+    PlayToneEx(523, SEMICOLCHEIA, VOL,FALSE); Wait(SEMICOLCHEIA);
+    PlayToneEx(587, SEMICOLCHEIA, VOL, FALSE); Wait(SEMICOLCHEIA);
+    PlayToneEx(659, COLCHEIA, VOL, FALSE); Wait(COLCHEIA);
+    PlayToneEx(440, COLCHEIA, VOL, FALSE); Wait(COLCHEIA);
+    PlayToneEx(523, SEMICOLCHEIA, VOL,FALSE); Wait(SEMICOLCHEIA);
+    PlayToneEx(587, SEMICOLCHEIA, VOL, FALSE); Wait(SEMICOLCHEIA);
+}
+
+task main() {
+    // Main theme of game of thrones.
+    PlayToneEx(392, SEMINIMA_PONTUADA, VOL, FALSE); Wait(SEMINIMA_PONTUADA);
+    PlayToneEx(264, SEMINIMA_PONTUADA, VOL, FALSE); Wait(SEMINIMA_PONTUADA);
+    PlayToneEx(311, SEMICOLCHEIA, VOL, FALSE);  Wait(SEMICOLCHEIA);
+    PlayToneEx(349, SEMICOLCHEIA, VOL, FALSE); Wait(SEMICOLCHEIA);
+    PlayToneEx(392, SEMINIMA, VOL, FALSE); Wait(SEMINIMA);
+    PlayToneEx(262, SEMINIMA, VOL, FALSE); Wait(SEMINIMA);
+    PlayToneEx(311, SEMICOLCHEIA, VOL, FALSE); Wait(SEMICOLCHEIA);
+    PlayToneEx(349, SEMICOLCHEIA, VOL, FALSE); Wait(SEMICOLCHEIA);
+    PlayToneEx(294, SEMIBREVE_PONTUADA, VOL, FALSE);// Wait(SEMIBREVE_PONTUADA);
+
+    background_strings();
+}
