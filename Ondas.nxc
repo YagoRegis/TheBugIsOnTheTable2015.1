@@ -1,24 +1,20 @@
+/*
+ * Initial Position:
+ * Aligned straight with the tsunami.
+ */
 #include "theBugAPI.h"
 
 task main() {
-     /*
-     move(25, POWER_NORMAL, FORWARD);
-     turn(90,POWER_NORMAL, RIGHT);
-     Wait(50);
-     move(45, POWER_NORMAL, FORWARD);
-     Wait(50);
-     claw_control(70, POWER_NORMAL, BACKWARD);
-     */
-
-  // Indica a porta que o sensor está conectado, neste caso porta 3.
+	
+    // Indicates the port to which the sensor is connected.
 	SetSensorUltrasonic(IN_2);
 
+	// The robot will move up to a certain distance.
 	while(true) {
-		// O sensor precisa de um tempo para ler os valores.
-		// Por isso tem um delay de 0.5 segundos.
+		// Delay to read sensor.
 		Wait(1000);
 
-		// Mostra o valor lido pelo sensor
+		// print the value read by the sensor.
 		ClearScreen();
         NumOut(0, 0, SensorUS(IN_2));
 
@@ -27,11 +23,13 @@ task main() {
 			break;
 		}
 		else {
-       OnFwd(OUT_BC, POWER_LOW);
+       		OnFwd(OUT_BC, POWER_LOW);
 		}
 	}
+	
 	Wait(50);
-  claw_control(60, POWER_NORMAL, BACKWARD);
-  move(70, POWER_NORMAL, BACKWARD);
-  PlaySound(SOUND_UP);
+  	claw_control(60, POWER_NORMAL, BACKWARD);
+  	
+  	// Moving to base.
+  	move(70, POWER_HIGH, BACKWARD);
 }
