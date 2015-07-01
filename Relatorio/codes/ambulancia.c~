@@ -1,0 +1,45 @@
+/*
+ * Initial Position:
+ * Right side of the "claw", aligned at the end of the "M" by inside.
+ */
+#include "theBugAPI.h"
+
+task main() {
+
+     // Moving to Supply Truck and Ambulance.
+     move(38, POWER_NORMAL, FORWARD);
+     turn(85, POWER_NORMAL, RIGHT);
+     Wait(1);
+     move(50, POWER_NORMAL, FORWARD);
+     turn(9, POWER_LOW, LEFT);
+     Wait(1);
+     move(20, POWER_NORMAL, FORWARD);
+     
+     // Moving to Yellow Mark.
+     move(100, POWER_NORMAL, FORWARD);
+     turn(80, POWER_HIGH, LEFT);
+     Wait(1);
+     move(25, POWER_NORMAL, FORWARD);
+     
+     // Moving to Evacuation Signal.
+     move(20, POWER_NORMAL, BACKWARD);
+     turn(30, POWER_NORMAL, LEFT);
+     Wait(1);
+     move(40, POWER_NORMAL, BACKWARD);
+     turn(35, POWER_NORMAL, RIGHT);
+     Wait(1);
+     move(21, POWER_NORMAL, FORWARD);
+     
+     // Moving to Isolamento de Construção.
+     move(30, POWER_NORMAL, BACKWARD);
+     turn(90, POWER_NORMAL, LEFT);
+     Wait(1);
+     move(30, POWER_NORMAL, FORWARD);
+     move(14, POWER_HIGH, FORWARD);
+     
+     //Moving to base
+     move(15, POWER_NORMAL, BACKWARD);
+     turn(83, POWER_NORMAL, LEFT);
+     Wait(1);
+     move(150, POWER_HIGH, FORWARD);
+}
