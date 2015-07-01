@@ -1,8 +1,0 @@
-#include "theBugAPI.h"
-
-task main()
-{
-     claw_control(100, POWER_HIGH, BACKWARD);
-     claw_control(100, POWER_HIGH, FORWARD);
-}
-
