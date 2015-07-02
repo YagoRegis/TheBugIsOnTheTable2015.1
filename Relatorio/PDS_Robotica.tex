@@ -128,6 +128,15 @@
 		Todas as rodas da ambulância estão tocando o tapete;\\
 		O sinal está obviamente em pé (não precisa ser na vertical), mantido no lugar apenas pelo atrito da viga com o tapete;\\
 		Nenhum parte do modelo de missão está sendo tocado pelo robô ou qualquer obstáculo estratégico;\\
+		A ambulância está na área amarela;\\
+		Todas as rodas da ambulância estão tocando o tapete.\\
+		O prédio oeste está intacto: seus 4 segmentos estão a 90° do tapete, e “perfeitamente” alinhados.\\
+		O edifício leste está obviamente danificado.\\
+		*Nada está tocando nenhum dos prédios exceto a base de rolamento.\\
+		*Nada nunca tocou nenhum dos prédios exceto a base de rolamento.\\
+		O dano foi causado unicamente pelo movimento da base de rolamento.\\
+		(*Exceção: Segmentos caídos do edifício leste podem tocar o tapete e/ou o edifício oeste
+		por acaso.)\\
 
 	\subsection{Passos envolvidos}
 		Sair da base\\
@@ -164,9 +173,7 @@
 	    Encerre o programa\\
 
 	\subsection{Código NXC}
-		\begin{tcolorbox}[]
-			\inputminted{c}{codes/ambulancia.nxc}
-		\end{tcolorbox}
+		\inputminted[linenos, frame = single]{c}{codes/ambulancia.nxc}
 
 \newpage
 \section{Galho da Árvore, Animais e Equipamentos}
@@ -206,19 +213,55 @@
 
 \newpage
 \section{Tsunami}
-	\subsection{Objetivo da issão}
+	\subsection{Objetivo da missão}
+		O galho leste da árvore está mais próximo do tapete do que os cabos elétricos estão.\\
+		A árvore e o modelo de missão dos cabos elétricos estão para cima, retos, tocando o tapete.\\
+
 	\subsection{Passos envolvidos}
+		Sair da base\\
+		Ir até a estrutura do tsunami\\
+		Acionar o mecanismo\\
+		Retornar a base\\
+
 	\subsection{Pseudo-código}
+		Mova em frente até que o sensor leia uma distância de 20cm ou menos\\
+		Levante a garra Xcm\\
+		Retorne a base\\
+
 	\subsection{Código NXC}
 		\begin{tcolorbox}[]
 			\inputminted{c}{codes/tsunami.nxc}
 		\end{tcolorbox}
 
 \newpage
-\section{Zona de Segurança}
-	\subsection{Objetivo da issão}
+\section{Família, Água, Segunrança, Animais, Suplementos e Equipamentos, Zona de Segurança}
+	\subsection{Objetivo da missão}
+		Ao menos duas pessoas estão juntas em uma área colorida.\\
+		Ao menos uma pessoa está com uma água (engarrafada) na mesma região.\\
+		Ao menos uma pessoa está na região colorida vermelha ou amarela.\\
+		Ao menos um animal está com pelo menos uma pessoa em uma região colorida.\\
+		Ao menos um elemento que não é água está numa região colorida vermelha ou amarela.\\
+		O robô está na região vermelha no final da partida.\\
+
 	\subsection{Passos envolvidos}
+		Sair da base\\
+		Pegar a pessoa ao lado da casa\\
+		Ir para a região vermleha\\
+
 	\subsection{Pseudo-código}
+		Saia da base\\
+		Ande Xcm\\
+		Vire a direita Xgraus\\
+		Ande Xcm\\
+		Vire a esquerda Xgraus\\
+		Ande Xcm\\
+		Levante a garra Xgraus\\
+		Ande Xcm para tras\\
+		Vire Xgraus a direita\\
+		Ande Xcm para frente\\
+		Vire Xgraus para a direta\\
+		Ande em frente até o sensor detectar a linha vermelha\\
+
 	\subsection{Código NXC}
 		\begin{tcolorbox}[]
 			\inputminted{c}{codes/zona_de_seguranca.nxc}
@@ -236,7 +279,7 @@
 
 \newpage
 \section{API}
-	\subsection{Objetivo da issão}
+	\subsection{Objetivo da missão}
 	\subsection{Passos envolvidos}
 	\subsection{Pseudo-código}
 	\subsection{Código NXC}
