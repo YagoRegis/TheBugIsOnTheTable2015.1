@@ -1,0 +1,314 @@
+%Compilação: 
+%pdflatex -shell-escape PDS_Robotica.tex
+
+\documentclass{article}
+
+\usepackage{amsmath} %remover numeracao das formulas%
+\usepackage{graphicx} %imagens%
+\usepackage{booktabs} %tabela mais bonita%
+\usepackage{minted} %code highlitning%
+\usepackage{tcolorbox} %text inside box%
+
+\title{PDS - Processo de Desenvolvimento de Software\\The Bug is on the Table}
+\date{30-06-2015}
+\author{Bruno Rodrigues\\Iago Rodrigues\\Jonathan Rufino\\Matheus Andrade\\Yago Regis}
+
+\begin{document}
+	\maketitle
+	\pagenumbering{gobble}
+	\newpage
+	\pagenumbering{arabic}
+
+\newpage
+\listoffigures
+
+\newpage
+\listoftables
+
+\newpage
+\tableofcontents
+
+\newpage
+\section{Missões}
+	\paragraph{}
+		O documento do desafio Fúria da Natureza, nos da diretrizes à respeito de todas as missões que podem ser realizadas. Cada uma possui sua descrição, condições finais e a respectiva pontuação.
+
+	\subsection{Ordem de Pontuação das Missões}
+		\paragraph{}
+			As missões foram listadas em ordem decrescente de pontuação, de forma que a pontuação considerada seja a maior possível de cada uma.
+
+		\begin{table}[h!]
+			\begin{center}
+				\begin{tabular}{c|c}
+					Pontuação & Missão\\
+					\hline
+					66 & Família\\
+					\hline
+					31 & Obstáculos\\
+					\hline
+					30 & Galho da Árvore\\
+					\hline
+					30 & Pista de Pouso\\
+					\hline
+					30 & Sinal de Evacuação\\
+					\hline
+					30 & Teste de Isolamento da Base\\
+					\hline
+					30 & Avião de Carga\\
+					\hline
+					25 & Ambulância\\
+					\hline
+					25 & Casa Elevada\\
+					\hline
+					25 & Construção de Código\\
+					\hline
+					25 & Zona de Segurança\\
+					\hline
+					20 & Camiñhão de Suplementos\\
+					\hline
+					20 & Relocação de Construção\\
+					\hline
+					20 & Tsunami\\
+					\hline
+					18 & Segurança\\
+					\hline
+					15 & Água\\
+					\hline
+					15 & Animais\\
+					\hline
+					4 & Suplementos e Equipamentos\\
+				\end{tabular}
+				\caption{Relação pontos por missão.}
+				\label{tab:table_pontuation}
+			\end{center}
+		\end{table}
+
+	\subsection{Ordem de Dificuldade das Missões}
+		\paragraph{}
+			Lista das missões ordenadas por dificuldade, mais fácil para a mais difícil, para que possa haver um cruzamento de informações entre pontuação e dificuldade afim de que as missões sejam priorizadas *melhorar texto*...
+
+		\begin{table}[h!]
+			\begin{center}
+				\begin{tabular}{cc}
+					\toprule
+						Dificuldade & Missão\\
+					\midrule
+						FÁCIL & Zona de Segurança\\
+					    FÁCIL & Caminhão de Suplementos\\
+					    FÁCIL & Tsunami\\
+					    MÉDIO & Família\\
+					    MÉDIO & Galho da Árvore\\
+					    MÉDIO & Pista de Pouso\\
+					    MÉDIO & Avião de Carga\\
+					    MÉDIO & Água\\
+					    MÉDIO & Animais\\
+					    MÉDIO & Suplementos e Equipamentos\\
+						DIFÍCIL & Obstáculos\\
+					    DIFÍCIL & Teste de Isolamento da Base\\
+					    DIFÍCIL & Casa Elevada\\
+					    DIFÍCIL & Construção de Código\\
+					    DIFÍCIL & Relocação de Construção\\
+					    DIFÍCIL & Segurança\\
+				    \bottomrule
+				\end{tabular}
+				\caption{Relação de dificuldade das missões}
+				\label{tab:table_dificulty}
+			\end{center}
+		\end{table}
+
+	\subsection{Definindo o Problema}
+		\paragraph{}
+			Algumas missões são completamente independentes uma das outras, entretanto, existem missões que devem seguir uma sequência lógica para que não atrapalhem as demais. Cada missão deve possuir um planejamento antes de ser desenvolvida e executada.
+
+\section{Caminhão de Suplementos, Ambulância, Sinal de Evacuação e Isolamento de Construção}
+
+	\subsection{Objetivo da missão}
+		O caminhão de suplementos está tocando o tapete na região amarela;\\
+		A ambulância está na área amarela;\\		
+		Todas as rodas da ambulância estão tocando o tapete;\\
+		O sinal está obviamente em pé (não precisa ser na vertical), mantido no lugar apenas pelo atrito da viga com o tapete;\\
+		Nenhum parte do modelo de missão está sendo tocado pelo robô ou qualquer obstáculo estratégico;\\
+		A ambulância está na área amarela;\\
+		Todas as rodas da ambulância estão tocando o tapete.\\
+		O prédio oeste está intacto: seus 4 segmentos estão a 90° do tapete, e “perfeitamente” alinhados.\\
+		O edifício leste está obviamente danificado.\\
+		*Nada está tocando nenhum dos prédios exceto a base de rolamento.\\
+		*Nada nunca tocou nenhum dos prédios exceto a base de rolamento.\\
+		O dano foi causado unicamente pelo movimento da base de rolamento.\\
+		(*Exceção: Segmentos caídos do edifício leste podem tocar o tapete e/ou o edifício oeste
+		por acaso.)\\
+
+	\subsection{Passos envolvidos}
+		Sair da base\\
+		Pegar o caminhão\\
+		Pegar a ambulância\\
+		Sseguir até a área amarela\\
+		Empurrar o Sinal de Evacuação\\
+		Destruir o prédio direto das torres\\
+		Voltar para a base\\
+
+	\subsection{Pseudo código}
+		Mova em frente 38cm\\
+		Pare de mover\\
+	    Vire à direita 90 graus\\
+	    Mova em frente 20cm (para chegar ao caminhão)\\
+	    Pegue o caminhão\\
+	    Mova em frente 30 cm (para chegar à ambulância)\\
+		Vire à esquerda 15 graus\\
+		Pegue a ambulância\\
+		Mova em frente 90 cm (para chegar na área azul)\\
+	    Pare de mover\\
+		Mova para trás 35cm\\
+	    Pare de mover\\
+	    Vire à direita 45 graus\\
+	    Mova em frente 40cm (para empurrar a placa de sinalização)\\
+	    Pare de mover\\
+	    Mova para trás 20cm\\
+	    Pare de mover\\
+	    Vire 175 graus\\
+		Mova em frente 90cm\\
+		Pare de mover\\
+		Vire à esquerda 30 graus\\
+		Mova em frente 40cm (para chegar à base)\\
+	    Encerre o programa\\
+
+	\subsection{Código NXC}
+		\inputminted[linenos, frame = single]{c}{codes/ambulancia.nxc}
+
+\newpage
+\section{Galho da Árvore, Animais e Equipamentos}
+
+	\subsection{Objetivo da Missão}
+		O galho leste da árvore está mais próximo do tapete do que os cabos elétricos estão;\\
+		A árvore e o modelo de missão dos cabos elétricos estão para cima, retos, tocando o tapete;\\
+		Ao menos um animal está com pelo menos uma pessoa em uma região colorida;\\
+		Ao menos um elemento que não é água está numa região colorida vermelha ou amarela (12 elementos possíveis: walkie talkie, bateria, gerador, 2 combustíveis, grão, pão, remédio, rádio, lanterna, motocicleta e capacete).\\
+
+	\subsection{Passos envolvidos}
+		Sair da Base\\
+    	Ir ao lado do galho da árvore\\
+    	Derrubar o galho da árvore\\
+    	Pegar os animais e equipamentos da região\\
+   		Retornar a Base\\
+
+   	\subsection{Pseudo-código}
+   		Mova em frente 14 cm\\
+	    Vire à esquerda 87 graus\\
+	    Mova em frente 67 cm\\
+	    Pare de mover\\
+		Levante a garra 70 graus\\
+	    Mova para trás 15 cm\\
+	    Vire para esquerda 90 graus\\
+	    Mova para frente 18 cm\\
+	    Vire para direita 90 graus\\
+	    Mova para frente 19 cm\\
+	    Desça a garra 70 graus\\
+	    Mova para trás 86 cm\\
+	    Encerre o programa\\
+
+	\subsection{Código NXC}
+		\begin{tcolorbox}[]
+			\inputminted{c}{codes/galho_da_arvore.nxc}
+		\end{tcolorbox}
+
+\newpage
+\section{Tsunami}
+	\subsection{Objetivo da missão}
+		O galho leste da árvore está mais próximo do tapete do que os cabos elétricos estão.\\
+		A árvore e o modelo de missão dos cabos elétricos estão para cima, retos, tocando o tapete.\\
+
+	\subsection{Passos envolvidos}
+		Sair da base\\
+		Ir até a estrutura do tsunami\\
+		Acionar o mecanismo\\
+		Retornar a base\\
+
+	\subsection{Pseudo-código}
+		Mova em frente até que o sensor leia uma distância de 20cm ou menos\\
+		Levante a garra Xcm\\
+		Retorne a base\\
+
+	\subsection{Código NXC}
+		\begin{tcolorbox}[]
+			\inputminted{c}{codes/tsunami.nxc}
+		\end{tcolorbox}
+
+\newpage
+\section{Família, Água, Segunrança, Animais, Suplementos e Equipamentos, Zona de Segurança}
+	\subsection{Objetivo da missão}
+		Ao menos duas pessoas estão juntas em uma área colorida.\\
+		Ao menos uma pessoa está com uma água (engarrafada) na mesma região.\\
+		Ao menos uma pessoa está na região colorida vermelha ou amarela.\\
+		Ao menos um animal está com pelo menos uma pessoa em uma região colorida.\\
+		Ao menos um elemento que não é água está numa região colorida vermelha ou amarela.\\
+		O robô está na região vermelha no final da partida.\\
+
+	\subsection{Passos envolvidos}
+		Sair da base\\
+		Pegar a pessoa ao lado da casa\\
+		Ir para a região vermleha\\
+
+	\subsection{Pseudo-código}
+		Saia da base\\
+		Ande Xcm\\
+		Vire a direita Xgraus\\
+		Ande Xcm\\
+		Vire a esquerda Xgraus\\
+		Ande Xcm\\
+		Levante a garra Xgraus\\
+		Ande Xcm para tras\\
+		Vire Xgraus a direita\\
+		Ande Xcm para frente\\
+		Vire Xgraus para a direta\\
+		Ande em frente até o sensor detectar a linha vermelha\\
+
+	\subsection{Código NXC}
+		\begin{tcolorbox}[]
+			\inputminted{c}{codes/zona_de_seguranca.nxc}
+		\end{tcolorbox}
+
+\newpage
+\section{Musica - Game of Thrones}
+	\subsection{Objetivo da issão}
+	\subsection{Passos envolvidos}
+	\subsection{Pseudo-código}
+	\subsection{Código NXC}
+		\begin{tcolorbox}[]
+			\inputminted{c}{codes/music_game_of_thrones.nxc}
+		\end{tcolorbox}
+
+\newpage
+\section{API}
+	\subsection{Objetivo da missão}
+	\subsection{Passos envolvidos}
+	\subsection{Pseudo-código}
+	\subsection{Código NXC}
+		\begin{tcolorbox}[]
+			\inputminted{c}{codes/the_bug_api.c}
+		\end{tcolorbox}
+		
+		\begin{tcolorbox}[]
+			\inputminted{c}{codes/the_bug_api.h}
+		\end{tcolorbox}
+
+\newpage
+\section{Garras}
+	\begin{figure}[h!]
+		\includegraphics[width=\linewidth]{images/Garra_1.JPG}
+		\caption{Base para acoplamento dos veículos.}
+		\label{fig:claw_1}
+	\end{figure}
+
+	\begin{figure}[h!]
+		\includegraphics[width=\linewidth]{images/Garra_2.JPG}
+		\caption{Garra para derrubar o galho e capturar objetos.}
+		\label{fig:claw_2}
+	\end{figure}
+
+	\begin{figure}[h!]
+		\includegraphics[width=\linewidth]{images/Garra_3.JPG}
+		\caption{Braço para acionamento do mecanismo das ondas.}
+		\label{fig:claw_3}
+	\end{figure}
+
+\end{document}
