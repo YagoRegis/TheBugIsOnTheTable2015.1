@@ -1,0 +1,13 @@
+# Untracked files:
+
+#NXC auto generated
+*.sym
+*.bak
+
+#Latex auto generated
+*.aux
+*.lof
+*.log
+*.lot
+*.pyg
+*.toc
