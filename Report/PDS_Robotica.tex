@@ -3,6 +3,7 @@
 
 \documentclass{article}
 
+\usepackage{hyperref} %linkar sumário com a página%
 \usepackage{amsmath} %remover numeracao das formulas%
 \usepackage{graphicx} %imagens%
 \usepackage{booktabs} %tabela mais bonita%
@@ -227,7 +228,7 @@
 		\inputminted[linenos, frame = single]{c}{../Ondas.nxc}
 
 \newpage
-\section{Família, Água, Segunrança, Animais, Suplementos e Equipamentos, Zona de Segurança}
+\section{Família, Água, Segurança, Animais, Suplementos e Equipamentos, Zona de Segurança}
 	\subsection{Objetivo da missão}
 		\begin{itemize}
 			\item Ao menos duas pessoas estão juntas em uma área colorida.
@@ -241,7 +242,7 @@
 	\subsection{Passos envolvidos}
 		Sair da base\\
 		Pegar a pessoa ao lado da casa\\
-		Ir para a região vermleha\\
+		Ir para a região vermelha\\
 
 	\subsection{Pseudo-código}
 		Saia da base\\
@@ -261,10 +262,15 @@
 		\inputminted[linenos, frame = single]{c}{../ZonaDeSeguranca.nxc}
 
 \newpage
-\section{Musica - Game of Thrones}
-	\subsection{Objetivo da issão}
-	\subsection{Passos envolvidos}
-	\subsection{Pseudo-código}
+\section{Musica - Game of Thrones Main Theme}
+	\subsection{Objetivo}
+		\paragraph{}
+			O professor propôs que os alunos que conseguissem fazer o robô tocar alguma música em suas missões iriam ganhar 5 pontos. Assim, o grupo escolheu a música tema da série Game of Thrones para o robô tocar.
+		\paragraph{}
+			Foi implementado apenas a primeira parte, visto que a música em seguida fica mais complexa e o grupo conseguia fazer o robô executar apenas uma nota por vez, e que, por tanto, iria perder a qualidade da música.
+		\paragraph{}
+			Foram criadas constantes baseada nas figuras musicais encontradas na partitura e o tempo indicado na partitura para facilitar a implementação. Foi criado constante para a primeira oitava que o robô consegue tocar, para que pudesse servir de apoio para implementação de funções que encontravam as frequências das notas sem precisar escrever elas diretamente na função “PlayToneEx”, contudo, essa última parte não foi implementada.
+
 	\subsection{Código NXC}
 		\inputminted[linenos, frame = single]{c}{../GameOfThrones.nxc}
 
