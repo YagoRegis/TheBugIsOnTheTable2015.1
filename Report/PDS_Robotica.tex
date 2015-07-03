@@ -4,6 +4,10 @@
 \documentclass{article}
 
 \usepackage{hyperref} %linkar sumário com a página%
+\hypersetup{
+	colorlinks = true,
+	linkcolor = black
+}
 \usepackage{amsmath} %remover numeracao das formulas%
 \usepackage{graphicx} %imagens%
 \usepackage{booktabs} %tabela mais bonita%
@@ -15,7 +19,8 @@
 
 \title{PDS - Processo de Desenvolvimento de Software\\The Bug is on the Table}
 \date{03-07-2015}
-\author{Bruno Rodrigues\\Iago Rodrigues\\Jonathan Rufino\\Matheus Andrade\\Yago Regis}
+\author{Bruno Rodrigues\\Iago Rodrigues\\Jonathan Rufino\\Matheus Andrade\\Yago 
+Regis}
 
 \begin{document}
 	\maketitle
@@ -35,11 +40,14 @@
 \newpage
 \section{Missões}
 	\paragraph{}
-		O documento do desafio Fúria da Natureza, nos da diretrizes à respeito de todas as missões que podem ser realizadas. Cada uma possui sua descrição, condições finais e a respectiva pontuação.
+		O documento do desafio Fúria da Natureza, nos da diretrizes à respeito 
+		de todas as missões que podem ser realizadas. Cada uma possui sua 
+		descrição, condições finais e a respectiva pontuação.
 
 	\subsection{Ordem de Pontuação das Missões}
 		\paragraph{}
-			As missões foram listadas em ordem decrescente de pontuação, de forma que a pontuação considerada seja a maior possível de cada uma.
+			As missões foram listadas em ordem decrescente de pontuação, de 
+			forma que a pontuação considerada seja a maior possível de cada uma.
 
 		\begin{table}[h!]
 			\begin{center}
@@ -74,7 +82,15 @@
 
 	\subsection{Ordem de Dificuldade das Missões}
 		\paragraph{}
-			Aqui temos uma lista das missões ordenadas por dificuldade, da mais fácil para a mais difícil, desta forma pode-se realizar um cruzamento de informações entre pontuação e dificuldade afim de que a equipe faça uma escolha das missões que realizará, priorizando de acordo com o esforço necessário e a pontuação recebida.
+			Lista de missões ordenadas por dificuldade, das mais fáceis para as 
+			mais difíceis, onde cada membro do grupo classificou individualmente 
+			cada missão e o resultado de todos foi mesclado nesta única tabela.
+		\paragraph{}
+			A partir daqui foi feito um cruzamento entre a pontuação e a 
+			dificuldade de cada missão para priorização das mesmas, e assim 
+			decidir a ordem em que o robô executará elas, para obter assim maior 
+			quantidade de pontos no menor espaço de tempo possível, ou seja, os 
+			2:30 minutos.
 
 		\begin{table}[h!]
 			\begin{center}
@@ -107,26 +123,74 @@
 
 	\subsection{Definindo o Problema}
 		\paragraph{}
-			Algumas missões são completamente independentes uma das outras, entretanto, existem missões que devem seguir uma sequência lógica para que não atrapalhem as demais. Cada missão deve possuir um planejamento antes de ser desenvolvida e executada.
+			Algumas missões são completamente independentes uma das outras, 
+			entretanto, existem missões que devem seguir uma sequência lógica 
+			para que não atrapalhem as demais. Cada missão deve possuir um 
+			planejamento antes de ser desenvolvida e executada.
 
 \newpage
-\section{Caminhão de Suplementos, Ambulância, Sinal de Evacuação e Isolamento de Construção}
+\section{API}
+	\subsection{Objetivo}
+		\paragraph{}
+			O objetivo da API (Application Programming Interface) é 
+			disponibilizar um conjunto de rotinas e padrões que serão utilizados 
+			em um ou mais Softwares em que os detalhes de sua implementação não 
+			são tão importantes, mas a boa execução de seus serviços sim.
+		\paragraph{}
+			Para o caso deste projeto, uma API foi implementada visando separar 
+			as funções básicas que são mais utilizadas pelo robô para executar 
+			as missões. As rotinas identificadas foram:
+
+		\begin{itemize}
+			\item Virar – Foi observada a necessidade do robô fazer curvas 
+			durante diversas missões;
+			\item Mover – É a operação mais básica realizada pelo robô;
+			\item Controle de Garra – Outra função bastante utilizada em 
+			diversas missões;
+		\end{itemize}
+
+		\paragraph{}
+			Além disto, todas estas funções abstraíram características da 
+			linguagem NXC, que trabalha muito com graus, tempo (em segundos) e 
+			curvas de apenas um motor, para executar suas próprias rotinas e 
+			adaptou-as para medições mais utilizadas, como se mover em 
+			centímetros, e fazer curvas em graus (já considerando ambos os 
+			motores).
+
+	\subsection{Código NXC}
+		\inputminted[linenos, frame = single]{c}{../theBugAPI.c}
+			\label{lst: thebugapi.c}
+		
+		\inputminted[linenos, frame = single]{c}{../theBugAPI.h}
+			\label{lst: thebugapi.h}
+
+\newpage
+\section{Caminhão de Suplementos, Ambulância, Sinal de Evacuação e Isolamento de 
+Construção}
 
 	\subsection{Objetivo da missão}
 		\begin{itemize}
-			\item O caminhão de suplementos está tocando o tapete na região amarela;
+			\item O caminhão de suplementos está tocando o tapete na região 
+			amarela;
 			\item A ambulância está na área amarela;		
 			\item Todas as rodas da ambulância estão tocando o tapete;
-			\item O sinal está obviamente em pé (não precisa ser na vertical), mantido no lugar apenas pelo atrito da viga com o tapete;
-			\item Nenhum parte do modelo de missão está sendo tocado pelo robô ou qualquer obstáculo estratégico;
+			\item O sinal está obviamente em pé (não precisa ser na vertical), 
+			mantido no lugar apenas pelo atrito da viga com o tapete;
+			\item Nenhum parte do modelo de missão está sendo tocado pelo robô 
+			ou qualquer obstáculo estratégico;
 			\item A ambulância está na área amarela;
 			Todas as rodas da ambulância estão tocando o tapete.
-			\item O prédio oeste está intacto: seus 4 segmentos estão a 90* do tapete, e “perfeitamente” alinhados.
+			\item O prédio oeste está intacto: seus 4 segmentos estão a 90* do 
+			tapete, e “perfeitamente” alinhados.
 			\item O edifício leste está obviamente danificado.
-			\item *Nada está tocando nenhum dos prédios exceto a base de rolamento.
-			\item *Nada nunca tocou nenhum dos prédios exceto a base de rolamento.
-			\item O dano foi causado unicamente pelo movimento da base de rolamento.
-			\item (*Exceção: Segmentos caídos do edifício leste podem tocar o tapete e/ou o edifício oeste
+			\item *Nada está tocando nenhum dos prédios exceto a base de 
+			rolamento.
+			\item *Nada nunca tocou nenhum dos prédios exceto a base de 
+			rolamento.
+			\item O dano foi causado unicamente pelo movimento da base de 
+			rolamento.
+			\item (*Exceção: Segmentos caídos do edifício leste podem tocar o 
+			tapete e/ou o edifício oeste
 			por acaso.)
 		\end{itemize}
 
@@ -142,27 +206,24 @@
 	\subsection{Pseudo código}
 		\begin{enumerate}
 			\item Mova em frente 38cm
-			\item Pare de mover
-		    \item Vire à direita 90 graus
-		    \item Mova em frente 20cm (para chegar ao caminhão)
-		    \item Pegue o caminhão
-		    \item Mova em frente 30 cm (para chegar à ambulância)
-			\item Vire à esquerda 15 graus
-			\item Pegue a ambulância
-			\item Mova em frente 90 cm (para chegar na área azul)
-		    \item Pare de mover
-			\item Mova para trás 35cm
-		    \item Pare de mover
-		    \item Vire à direita 45 graus
-		    \item Mova em frente 40cm (para empurrar a placa de sinalização)
-		    \item Pare de mover
-		    \item Mova para trás 20cm
-		    \item Pare de mover
-		    \item Vire 175 graus
-			\item Mova em frente 90cm
-			\item Pare de mover
-			\item Vire à esquerda 30 graus
-			\item Mova em frente 40cm (para chegar à base)
+		    \item Vire à direita 85 graus
+		    \item Mova em frente 50cm, pegue o caminhão
+			\item Vire à esquerda 9 graus
+			\item Mova em frente 20cm, pegue a ambulância
+			\item Mova em frente 100cm, para chegar na área azul
+		    \item Vire à esquerda 80 graus
+			\item Mova em frente 25cm
+			\item Mova para trás 20cm
+		    \item Vire à esquerda 30 graus
+		    \item Mova para trás 40cm
+		    \item Vire à direita 35 graus
+		    \item Mova em frente 21cm, para empurrar a placa
+		    \item Mova para traś 30cm
+		    \item Vire à esquerda 90 graus
+		    \item Mova em frente 44cm
+		    \item Mova para trás 15cm
+		    \item Vire à esquerda 83 graus
+		    \item Mova em frente 150cm
 		    \item Encerre o programa
 		\end{enumerate}
 
@@ -174,10 +235,16 @@
 
 	\subsection{Objetivo da Missão}
 		\begin{itemize}
-			\item O galho leste da árvore está mais próximo do tapete do que os cabos elétricos estão;
-			\item A árvore e o modelo de missão dos cabos elétricos estão para cima, retos, tocando o tapete;
-			\item Ao menos um animal está com pelo menos uma pessoa em uma região colorida;
-			\item Ao menos um elemento que não é água está numa região colorida vermelha ou amarela (12 elementos possíveis: walkie talkie, bateria, gerador, 2 combustíveis, grão, pão, remédio, rádio, lanterna, motocicleta e capacete).
+			\item O galho leste da árvore está mais próximo do tapete do que os 
+			cabos elétricos estão;
+			\item A árvore e o modelo de missão dos cabos elétricos estão para 
+			cima, retos, tocando o tapete;
+			\item Ao menos um animal está com pelo menos uma pessoa em uma 
+			região colorida;
+			\item Ao menos um elemento que não é água está numa região colorida 
+			vermelha ou amarela (12 elementos possíveis: walkie talkie, bateria, 
+			gerador, 2 combustíveis, grão, pão, remédio, rádio, lanterna, 
+			motocicleta e capacete).
 		\end{itemize}
 
 	\subsection{Passos envolvidos}
@@ -188,19 +255,19 @@
    		Retornar a Base\\
 
    	\subsection{Pseudo-código}
-   		Mova em frente 14 cm\\
-	    Vire à esquerda 87 graus\\
-	    Mova em frente 67 cm\\
-	    Pare de mover\\
-		Levante a garra 70 graus\\
-	    Mova para trás 15 cm\\
-	    Vire para esquerda 90 graus\\
-	    Mova para frente 18 cm\\
-	    Vire para direita 90 graus\\
-	    Mova para frente 19 cm\\
-	    Desça a garra 70 graus\\
-	    Mova para trás 86 cm\\
-	    Encerre o programa\\
+   		\begin{enumerate}
+	   		\item Mova em frente 70 cm
+	   		\item Levante a garra 100 graus
+	   		\item Desça a garra 100 graus
+	   		\item Mova para trás 30cm
+	   		\item Vire à direita 85 graus
+	   		\item Mova para trás 22cm
+	   		\item Vire à esquerda 90 graus
+	   		\item Mova em frente 39cm
+	   		\item Levante a garra 70 graus
+	   		\item Mova para trás 70cm
+		    \item Encerre o programa
+		\end{enumerate}
 
 	\subsection{Código NXC}
 		\inputminted[linenos, frame = single]{c}{../GalhoArvore.nxc}
@@ -209,8 +276,10 @@
 \section{Tsunami}
 	\subsection{Objetivo da missão}
 		\begin{itemize}
-			\item O galho leste da árvore está mais próximo do tapete do que os cabos elétricos estão.
-			\item A árvore e o modelo de missão dos cabos elétricos estão para cima, retos, tocando o tapete.
+			\item O galho leste da árvore está mais próximo do tapete do que os 
+			cabos elétricos estão.
+			\item A árvore e o modelo de missão dos cabos elétricos estão para 
+			cima, retos, tocando o tapete.
 		\end{itemize}
 
 	\subsection{Passos envolvidos}
@@ -220,22 +289,32 @@
 		Retornar a base\\
 
 	\subsection{Pseudo-código}
-		Mova em frente até que o sensor leia uma distância de 20cm ou menos\\
-		Levante a garra Xcm\\
-		Retorne a base\\
+		\begin{enumerate}
+			\item Ligue o sensor Ultrasônico
+			\item Mova em frente até que o sensor leia uma distância de 23cm ou 
+			menos
+			\item Levante a garra 60 graus
+			\item Mova para trás 70cm
+			\item Encerre o programa
+		\end{enumerate}
 
 	\subsection{Código NXC}
 		\inputminted[linenos, frame = single]{c}{../Ondas.nxc}
 
 \newpage
-\section{Família, Água, Segurança, Animais, Suplementos e Equipamentos, Zona de Segurança}
+\section{Família, Água, Segurança, Animais, Suplementos e Equipamentos, Zona de 
+Segurança}
 	\subsection{Objetivo da missão}
 		\begin{itemize}
 			\item Ao menos duas pessoas estão juntas em uma área colorida.
-			\item Ao menos uma pessoa está com uma água (engarrafada) na mesma região.
-			\item Ao menos uma pessoa está na região colorida vermelha ou amarela.
-			\item Ao menos um animal está com pelo menos uma pessoa em uma região colorida.
-			\item Ao menos um elemento que não é água está numa região colorida vermelha ou amarela.
+			\item Ao menos uma pessoa está com uma água (engarrafada) na mesma 
+			região.
+			\item Ao menos uma pessoa está na região colorida vermelha ou 
+			amarela.
+			\item Ao menos um animal está com pelo menos uma pessoa em uma 
+			região colorida.
+			\item Ao menos um elemento que não é água está numa região colorida 
+			vermelha ou amarela.
 			\item O robô está na região vermelha no final da partida.
 		\end{itemize}
 
@@ -245,18 +324,21 @@
 		Ir para a região vermelha\\
 
 	\subsection{Pseudo-código}
-		Saia da base\\
-		Ande Xcm\\
-		Vire a direita Xgraus\\
-		Ande Xcm\\
-		Vire a esquerda Xgraus\\
-		Ande Xcm\\
-		Levante a garra Xgraus\\
-		Ande Xcm para tras\\
-		Vire Xgraus a direita\\
-		Ande Xcm para frente\\
-		Vire Xgraus para a direta\\
-		Ande em frente até o sensor detectar a linha vermelha\\
+		\begin{enumerate}
+			\item Mova em frente 43cm
+			\item Vire à direita 85 graus
+			\item Mova em frente 67cm
+			\item Vire à esquerda 78 graus
+			\item Mova em frente 22cm
+			\item Levante a garra 55 graus
+			\item Mova para trás 15cm
+			\item Vire à direita 85 graus
+			\item Mova em frente 80cm
+			\item Vire à direita 44cm
+			\item Ligue o sensor RGB
+			\item Mova em frente até o sensor detectar a cor vermelha
+			\item Encerre o programa
+		\end{enumerate}
 
 	\subsection{Código NXC}
 		\inputminted[linenos, frame = single]{c}{../ZonaDeSeguranca.nxc}
@@ -265,27 +347,75 @@
 \section{Musica - Game of Thrones Main Theme}
 	\subsection{Objetivo}
 		\paragraph{}
-			O professor propôs que os alunos que conseguissem fazer o robô tocar alguma música em suas missões iriam ganhar 5 pontos. Assim, o grupo escolheu a música tema da série Game of Thrones para o robô tocar.
+			O professor propôs que os alunos que conseguissem fazer o robô tocar 
+			alguma música em suas missões iriam ganhar 5 pontos. Assim, o grupo 
+			escolheu a música tema da série Game of Thrones para o robô tocar.
 		\paragraph{}
-			Foi implementado apenas a primeira parte, visto que a música em seguida fica mais complexa e o grupo conseguia fazer o robô executar apenas uma nota por vez, e que, por tanto, iria perder a qualidade da música.
+			Foi implementado apenas a primeira parte, visto que a música em 
+			seguida fica mais complexa e o grupo conseguia fazer o robô executar 
+			apenas uma nota por vez, e que, por tanto, iria perder a qualidade 
+			da música.
 		\paragraph{}
-			Foram criadas constantes baseada nas figuras musicais encontradas na partitura e o tempo indicado na partitura para facilitar a implementação. Foi criado constante para a primeira oitava que o robô consegue tocar, para que pudesse servir de apoio para implementação de funções que encontravam as frequências das notas sem precisar escrever elas diretamente na função “PlayToneEx”, contudo, essa última parte não foi implementada.
+			Foram criadas constantes baseada nas figuras musicais encontradas na 
+			partitura e o tempo indicado na partitura para facilitar a 
+			implementação. Foi criado constante para a primeira oitava que o 
+			robô consegue tocar, para que pudesse servir de apoio para 
+			implementação de funções que encontravam as frequências das notas 
+			sem precisar escrever elas diretamente na função “PlayToneEx”, 
+			contudo, essa última parte não foi implementada.
 
 	\subsection{Código NXC}
 		\inputminted[linenos, frame = single]{c}{../GameOfThrones.nxc}
 
 \newpage
-\section{API}
-	\subsection{Objetivo da missão}
-	\subsection{Passos envolvidos}
-	\subsection{Pseudo-código}
-	\subsection{Código NXC}
-		\inputminted[linenos, frame = single]{c}{../theBugAPI.c}
-		
-		\inputminted[linenos, frame = single]{c}{../theBugAPI.h}
+\section{Robô}
+	\paragraph{}
+
+	\begin{figure}[h!]
+		\includegraphics[width=\linewidth]{../Images/robot_1.JPG}
+		\caption{Visão geral do robô.}
+		\label{fig:robot_1}
+	\end{figure}
+
+	\begin{figure}[h!]
+		\includegraphics[width=\linewidth]{../Images/robot_2.JPG}
+		\caption{Vista frontal.}
+		\label{fig:robot_2}
+	\end{figure}
+
+	\begin{figure}[h!]
+		\includegraphics[width=\linewidth]{../Images/robot_3.JPG}
+		\caption{Vista lateral.}
+		\label{fig:robot_3}
+	\end{figure}
+
+	\begin{figure}[h!]
+		\includegraphics[width=\linewidth]{../Images/robot_4.JPG}
+		\caption{Vista inferior.}
+		\label{fig:robot_4}
+	\end{figure}
 
 \newpage
 \section{Garras}
+	\paragraph{}
+		Para que as missões fossem efetivamente cumpridas, três garras 
+		removíveis foram montadas. O objetivo foi trocar de garra para um grupo 
+		de missões específicas, afim de que as mesmas pudessem ser realizadas da 
+		melhor forma possível.
+	\paragraph{}
+		A Figura \ref{fig:claw_1} mostra a primeira garra que foi construída. O objetivo desta 
+		é agrupar a ambulância e o caminhão de suplementos dentro da garra e 
+		levá-los até a área pretendida.
+	\paragraph{}
+		A Figura \ref{fig:claw_2} mostra a garra construída com o objetivo de se levantar para 
+		derrubar o galho da árvore e capturar objetos para levá-los em áreas 
+		distintas. Ela também possui um sensor RGB com finalidade de perceber as 
+		cores do tapete enviando um sinal para o microcontrolador que irá parar 
+		o robô caso receba um sinal de cor vermelha.
+	\paragraph{}
+		A Figura \ref{fig:claw_3} mostra a garra que tem como objetivo único de se levantar 
+		para acionar o mecanismo que derruba as “ondas”.
+
 	\begin{figure}[h!]
 		\includegraphics[width=\linewidth]{../Images/claw_1.JPG}
 		\caption{Base para acoplamento dos veículos.}

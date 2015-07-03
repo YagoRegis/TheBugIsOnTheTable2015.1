@@ -6,15 +6,15 @@
 
 task main() {
 	
-    // Indicates the port to which the sensor is connected.
+    //Indicates the port to which the sensor is connected.
 	SetSensorUltrasonic(IN_2);
 
-	// The robot will move up to a certain distance.
+	//The robot will move up to a certain distance.
 	while(true) {
-		// Delay to read sensor.
+		//Delay to read sensor.
 		Wait(1000);
 
-		// print the value read by the sensor.
+		//print the value read by the sensor.
 		ClearScreen();
         NumOut(0, 0, SensorUS(IN_2));
 
@@ -30,6 +30,6 @@ task main() {
 	Wait(50);
   	claw_control(60, POWER_NORMAL, BACKWARD);
   	
-  	// Moving to base.
+  	//Moving to base.
   	move(70, POWER_HIGH, BACKWARD);
 }

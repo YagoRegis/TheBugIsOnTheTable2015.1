@@ -1,6 +1,7 @@
 /*
  * Initial Position:
- * Right side of the "claw", aligned at the end of the "M" by left-inside.
+ * Right side of the "claw", aligned at the end of the "M" by 
+ * left-inside.
  */
 #include "theBugAPI.h"
 
@@ -9,6 +10,7 @@
 
 task main() {
 
+    //Moving to the father
     move(43, POWER_HIGH, FORWARD);
     turn(85, POWER_HIGH, RIGHT);
     Wait(1);
@@ -17,6 +19,8 @@ task main() {
     Wait(1);
     move(22, POWER_HIGH, FORWARD);
     claw_control(55, POWER_NORMAL, BACKWARD);
+
+    //Moving to the red zone
     move(15, POWER_HIGH, BACKWARD);
     turn(85, POWER_HIGH, RIGHT);
     Wait(1);
@@ -24,7 +28,7 @@ task main() {
     turn(44, POWER_HIGH, RIGHT);
     Wait(1);
      
-    // Turn on the RGB sensor
+    //Turn on the RGB sensor
 	SetSensorColorFull(S2);
 
 	while(Sensor(S2) != RED) {
