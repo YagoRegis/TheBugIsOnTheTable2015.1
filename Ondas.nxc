@@ -16,20 +16,20 @@ task main() {
 
 		//print the value read by the sensor.
 		ClearScreen();
-        NumOut(0, 0, SensorUS(IN_2));
+		NumOut(0, 0, SensorUS(IN_2));
 
 		if(SensorUS(IN_2) < 23) {
 			Off(OUT_BC);
 			break;
 		}
 		else {
-       		OnFwd(OUT_BC, POWER_LOW);
+			OnFwd(OUT_BC, POWER_LOW);
 		}
 	}
-	
+
 	Wait(50);
-  	claw_control(60, POWER_NORMAL, BACKWARD);
-  	
-  	//Moving to base.
-  	move(70, POWER_HIGH, BACKWARD);
+	claw_control(60, POWER_NORMAL, BACKWARD);
+
+	//Moving to base.
+	move(70, POWER_HIGH, BACKWARD);
 }

@@ -1,7 +1,7 @@
 %Compilação: 
 %pdflatex -shell-escape PDS_Robotica.tex
 
-\documentclass{article}
+\documentclass[12pt,a4paper]{article}
 
 \usepackage{hyperref} %linkar sumário com a página%
 \hypersetup{
@@ -12,7 +12,7 @@
 \usepackage{graphicx} %imagens%
 \usepackage{booktabs} %tabela mais bonita%
 \usepackage{minted} %code highlitning%
-\usepackage{tcolorbox} %text inside box%
+\usepackage{eso-pic}
 \usepackage[brazilian]{babel} %hifenização%
 \usepackage[utf8]{inputenc} %palavras acentuadas%
 \usepackage[T1]{fontenc} %codificação da fonte%
@@ -23,10 +23,12 @@
 Regis}
 
 \begin{document}
-	\maketitle
-	\pagenumbering{gobble}
-	\newpage
-	\pagenumbering{arabic}
+
+\maketitle
+\pagenumbering{gobble}
+
+\newpage
+\pagenumbering{arabic}
 
 \newpage
 \listoffigures
@@ -40,9 +42,9 @@ Regis}
 \newpage
 \section{Missões}
 	\paragraph{}
-		O documento do desafio Fúria da Natureza, nos da diretrizes à respeito 
-		de todas as missões que podem ser realizadas. Cada uma possui sua 
-		descrição, condições finais e a respectiva pontuação.
+		O documento do desafio Fúria da Natureza[1], nos da diretrizes à 
+		respeito de todas as missões que podem ser realizadas. Cada uma possui 
+		sua descrição, condições finais e a respectiva pontuação.
 
 	\subsection{Ordem de Pontuação das Missões}
 		\paragraph{}
@@ -347,13 +349,15 @@ Segurança}
 \section{Musica - Game of Thrones Main Theme}
 	\subsection{Objetivo}
 		\paragraph{}
-			O professor propôs que os alunos que conseguissem fazer o robô tocar 
-			alguma música em suas missões iriam ganhar 5 pontos. Assim, o grupo 
-			escolheu a música tema da série Game of Thrones para o robô tocar.
+			Uma outra característica importante presente nos robõs Mindstorms é 
+			a capacidade de reproduzir sons ou músicas completas. Desta forma, o 
+			grupo propôs a execução de uma música pelo modelo de missão, no 
+			intuito de receber a bonificação de 5 pontos. A música escolhida foi
+			o tema de abertura da série de televisão Game of Thrones.
 		\paragraph{}
-			Foi implementado apenas a primeira parte, visto que a música em 
+			Apenas a primeira parte foi implementada, visto que a música em 
 			seguida fica mais complexa e o grupo conseguia fazer o robô executar 
-			apenas uma nota por vez, e que, por tanto, iria perder a qualidade 
+			apenas uma nota por vez, e que, portanto, iria perder a qualidade 
 			da música.
 		\paragraph{}
 			Foram criadas constantes baseada nas figuras musicais encontradas na 
@@ -370,26 +374,29 @@ Segurança}
 \newpage
 \section{Robô}
 	\paragraph{}
+		Para a montagem do robô foi utilizado o modelo 3-Motor Chassis[3], e 
+		algumas adaptações foram realizadas afim de melhor atender as 
+		necessidades identificadas pelo grupo.
 
-	\begin{figure}[h!]
+	\begin{figure}[H]
 		\includegraphics[width=\linewidth]{../Images/robot_1.JPG}
 		\caption{Visão geral do robô.}
 		\label{fig:robot_1}
 	\end{figure}
 
-	\begin{figure}[h!]
+	\begin{figure}[H]
 		\includegraphics[width=\linewidth]{../Images/robot_2.JPG}
 		\caption{Vista frontal.}
 		\label{fig:robot_2}
 	\end{figure}
 
-	\begin{figure}[h!]
+	\begin{figure}[H]
 		\includegraphics[width=\linewidth]{../Images/robot_3.JPG}
 		\caption{Vista lateral.}
 		\label{fig:robot_3}
 	\end{figure}
 
-	\begin{figure}[h!]
+	\begin{figure}[H]
 		\includegraphics[width=\linewidth]{../Images/robot_4.JPG}
 		\caption{Vista inferior.}
 		\label{fig:robot_4}
@@ -403,35 +410,48 @@ Segurança}
 		de missões específicas, afim de que as mesmas pudessem ser realizadas da 
 		melhor forma possível.
 	\paragraph{}
-		A Figura \ref{fig:claw_1} mostra a primeira garra que foi construída. O objetivo desta 
-		é agrupar a ambulância e o caminhão de suplementos dentro da garra e 
-		levá-los até a área pretendida.
-	\paragraph{}
-		A Figura \ref{fig:claw_2} mostra a garra construída com o objetivo de se levantar para 
-		derrubar o galho da árvore e capturar objetos para levá-los em áreas 
-		distintas. Ela também possui um sensor RGB com finalidade de perceber as 
-		cores do tapete enviando um sinal para o microcontrolador que irá parar 
-		o robô caso receba um sinal de cor vermelha.
-	\paragraph{}
-		A Figura \ref{fig:claw_3} mostra a garra que tem como objetivo único de se levantar 
-		para acionar o mecanismo que derruba as “ondas”.
+		A Figura \ref{fig:claw_1} mostra a primeira garra que foi construída. O 
+		objetivo desta é agrupar a ambulância e o caminhão de suplementos dentro 
+		da garra e levá-los até a área pretendida.
 
-	\begin{figure}[h!]
+	\begin{figure}[H]
 		\includegraphics[width=\linewidth]{../Images/claw_1.JPG}
 		\caption{Base para acoplamento dos veículos.}
 		\label{fig:claw_1}
 	\end{figure}
 
-	\begin{figure}[h!]
+	\paragraph{}
+		A Figura \ref{fig:claw_2} mostra a garra construída com o objetivo de se 
+		levantar para derrubar o galho da árvore e capturar objetos para 
+		levá-los em áreas distintas. Ela também possui um sensor RGB com 
+		finalidade de perceber as cores do tapete enviando um sinal para o 
+		microcontrolador que irá parar o robô caso receba um sinal de cor 
+		vermelha.
+
+	\begin{figure}[H]
 		\includegraphics[width=\linewidth]{../Images/claw_2.JPG}
 		\caption{Garra para derrubar o galho e capturar objetos.}
 		\label{fig:claw_2}
 	\end{figure}
 
-	\begin{figure}[h!]
+	\paragraph{}
+		A Figura \ref{fig:claw_3} mostra a garra que tem como objetivo único de 
+		se levantar para acionar o mecanismo que derruba as “ondas”.	
+
+	\begin{figure}[H]
 		\includegraphics[width=\linewidth]{../Images/claw_3.JPG}
 		\caption{Braço para acionamento do mecanismo das ondas.}
 		\label{fig:claw_3}
 	\end{figure}
+
+\newpage
+\section{Referências}
+	FIRST \& LEGO. Nature's Fury. Disponível em: 
+	<http://www.firstlegoleagu\\e.org/challenge/2013naturesfury>.\\\\
+	NXTPROGRAMS. 3-Motor Chassis. Disponível em: 
+	<http://www.nxtprogr\\ams.com/NXT2/3-motor\_chassis/steps.html>.\\\\
+	SHEA. Programming NXT color sensor with NXC?. Disponível em: 
+	<http://\\bricks.stackexchange.com/questions/6176/programming-nxt-color-
+	sensor-wi\\th-nxc>.
 
 \end{document}
